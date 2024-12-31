@@ -1,0 +1,4 @@
+# 小鼠骨骼肌肉模型
+CyberMice_FullDof_1110.xml包含模型全部信息，只需配合meshes使用。多头肌肉使用pulley建模为一个肌肉。
+CyberMice_FullDof_SingleTendon.xml将多头肌肉分开建模，没有使用pulley。
+CyberMice_FullDof.xml文件为总文件，需要包含Asset、Body、Equality、Geometry、Muscle和Tendon才是完整模型，建模方式和SingleTendon一样。
