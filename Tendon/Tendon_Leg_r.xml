@@ -1,0 +1,572 @@
+<mujoco>
+    <tendon>
+                <spatial name="RGM_dorsal_tendon" group="2">
+        <site site="RGM_dorsal_GM_dorsal-P1" />
+        <site site="RGM_dorsal_GM_dorsal-P2" />
+        <site site="RGM_dorsal_GM_dorsal-P3" />
+        <site site="RGM_dorsal_GM_dorsal-P4" />
+        </spatial>
+        <spatial name="RGM_mid_tendon" group="2">
+        <site site="RGM_mid_GM_mid-P1" />
+        <site site="RGM_mid_GM_mid-P2" />
+        <site site="RGM_mid_GM_mid-P3" />
+        <site site="RGM_mid_GM_mid-P4" />
+        </spatial>
+        <spatial name="RGM_ventral_tendon" group="2">
+        <site site="RGM_ventral_GM_ventral-P1" />
+        <site site="RGM_ventral_GM_ventral-P2" />
+        <site site="RGM_ventral_GM_ventral-P3" />
+        <site site="RGM_ventral_GM_ventral-P4" />
+        </spatial>
+        <spatial name="ROE_tendon" group="2">
+        <site site="ROE_OE-P1" />
+        <site site="ROE_OE-P2" />
+        </spatial>
+        <spatial name="ROI_tendon" group="2">
+        <site site="ROI_OI-P1" />
+        <geom geom="ROI_at_Femur_cylinder" sidesite="ROI_at_Femur_cylinder_OI_1_sidesite" />
+        <site site="ROI_OI-P2" />
+        </spatial>
+        <spatial name="RGEM_tendon" group="2">
+        <site site="RGEM_GEM-P1" />
+        <site site="RGEM_GEM-P2" />
+        </spatial>
+        <spatial name="RQF_tendon" group="2">
+        <site site="RQF_QF-P1" />
+        <geom geom="RQF_at_Thigh_cylinder" sidesite="RQF_at_Thigh_cylinder_QF_1_sidesite" />
+        <site site="RQF_QF-P2" />
+        </spatial>
+        <spatial name="RAM_tendon" group="2">
+        <site site="RAM_AM-P1" />
+        <site site="RAM_AM-P2" />
+        </spatial>
+        <spatial name="RAL_tendon" group="2">
+        <site site="RAL_AL-P1" />
+        <site site="RAL_AL-P2" />
+        </spatial>
+        <spatial name="RAB_tendon" group="2">
+        <site site="RAB_AB-P1" />
+        <geom geom="RAB_at_Quads_ellipsoid_AB" sidesite="RAB_at_Quads_ellipsoid_AB_1_sidesite" />
+        <site site="RAB_AB-P2" />
+        </spatial>
+        <spatial name="RGP_tendon" group="2">
+        <site site="RGP_GP-P1" />
+        <geom geom="RGA_at_Pelvis_cylinder" sidesite="RGA_at_Pelvis_cylinder_GP_1_sidesite" />
+        <site site="RGP_GP-P2" />
+        </spatial>
+        <spatial name="RGA_tendon" group="2">
+        <site site="RGA_GA-P1" />
+        <geom geom="RGA_at_Pelvis_cylinder" sidesite="RGA_at_Pelvis_cylinder_GA_1_sidesite" />
+        <site site="RGA_GA-P2" />
+        </spatial>
+
+
+        <!-- <spatial name="RPMA_tendon" group="2">
+            <site site="L6_RTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="RPMA_PMA-P2" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+                <site site="L5_RTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+                <site site="L4_RTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+                <site site="L3_RTransverseProcess" />
+        </spatial> -->
+
+        <spatial name="RPMA_tendon_1" group="2">
+            <site site="L6_RTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="RPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+                <site site="L5_RTransverseProcess" />
+        </spatial>
+        <spatial name="RPMA_tendon_2" group="2">
+            <site site="L6_RTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="RPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+                <site site="L4_RTransverseProcess" />
+        </spatial>
+        <spatial name="RPMA_tendon_3" group="2">
+            <site site="L6_RTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="RPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+                <site site="L3_RTransverseProcess" />
+        </spatial>
+
+
+        <spatial name="RPMI_tendon" group="2">
+            <site site="RPMI_PMI-P2" />
+            <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+            <site site="L4_RTransverseProcess"/>
+            <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+            <site site="L3_RTransverseProcess"/>
+            <geom geom="L3_Psoas_cylinder" sidesite="L3_PsoasSideSite" />
+            <site site="L2_RTransverseProcess"/>
+            <geom geom="L2_Psoas_cylinder" sidesite="L2_PsoasSideSite" />
+            <site site="L1_RTransverseProcess"/>
+            <geom geom="L1_Psoas_cylinder" sidesite="L1_PsoasSideSite" />
+            <site site="T13_RTransverseProcess"/>           
+        </spatial>
+        <spatial name="RILI_tendon" group="2">
+        <site site="RILI_ILI-P1" />
+        <geom geom="RHip_Flexors_at_Quads_ellipsoid_ILI" sidesite="RHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" />
+        <site site="RILI_ILI-P2" />
+        </spatial>
+        <spatial name="RPECT_tendon" group="2">
+        <site site="RPECT_PECT-P1" />
+        <geom geom="RPECT_at_Quads_ellipsoid_PECT" sidesite="RPECT_at_Quads_ellipsoid_PECT_1_sidesite" />
+        <site site="RPECT_PECT-P2" />
+        </spatial>
+        <spatial name="RCF_tendon" group="2">
+        <site site="RCF_CF-P1" />
+        <site site="RCF_CF-P2" />
+        <site site="RCF_CF-P3" />
+        <site site="RCF_CF-P4" />
+        </spatial>
+        <spatial name="RSM_tendon" group="2">
+        <site site="RSM_SM-P1" />
+        <site site="RSM_SM-P2" />
+        </spatial>
+        <spatial name="RST_tendon" group="2">
+        <site site="RST_ST-P1" />
+        <geom geom="RST_at_Pelvis_sphere" sidesite="RST_at_Pelvis_sphere_ST_1_sidesite" />
+        <site site="RST_ST-P2" />
+        </spatial>
+        <spatial name="RBFA_tendon" group="2">
+        <site site="RBFA_BFA-P1" />
+        <geom geom="RCF_BFA_at_Thigh_ellipsoid_BFA" sidesite="RCF_BFA_at_Thigh_ellipsoid_BFA_1_sidesite" />
+        <site site="RBFA_BFA-P2" />
+        <site site="RBFA_BFA-P3" />
+        </spatial>
+        <spatial name="RBFP_cranial_tendon" group="2">
+        <site site="RBFP_cranial_BFP_cranial-P1" />
+        <site site="RBFP_cranial_BFP_cranial-P2" />
+        </spatial>
+        <spatial name="RBFP_mid_tendon" group="2">
+        <site site="RBFP_mid_BFP_mid-P1" />
+        <site site="RBFP_mid_BFP_mid-P2" />
+        </spatial>
+        <spatial name="RBFP_caudal_tendon" group="2">
+        <site site="RBFP_caudal_BFP_caudal-P1" />
+        <site site="RBFP_caudal_BFP_caudal-P2" />
+        </spatial>
+        <spatial name="RRF_tendon" group="2">
+        <site site="RRF_RF-P1" />
+        <site site="RRF_RF-P2" />
+        </spatial>
+        <spatial name="RVM_tendon" group="2">
+        <site site="RVM_VM-P1" />
+        <site site="RVM_VM-P2" />
+        </spatial>
+        <spatial name="RVL_tendon" group="2">
+        <site site="RVL_VL-P1" />
+        <site site="RVL_VL-P2" />
+        </spatial>
+        <spatial name="RVI_tendon" group="2">
+        <site site="RVI_VI-P1" />
+        <site site="RVI_VI-P2" />
+        </spatial>
+        <spatial name="RPOP_tendon" group="2">
+        <site site="RPOP_POP-P1" />
+        <site site="RPOP_POP-P2" />
+        </spatial>
+        <spatial name="RTA_tendon" group="2">
+        <site site="RTA_TA-P1" />
+        <site site="RTA_TA-P2" />
+        <site site="RTA_TA-P3" />
+        <site site="RTA_TA-P4" />
+        <site site="RTA_TA-P5" />
+        <site site="RTA_TA-P6" />
+        </spatial>
+
+        <!-- <spatial name="REDL_tendon" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P5" />
+                <site site="REDL_EDL-P9" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P9-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P10" />
+                
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P6" />
+                <site site="REDL_EDL-P11" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P11-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P12" />
+                
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P7" />
+                <site site="REDL_EDL-P13" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P13-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P14" />
+
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P8" />
+                <site site="REDL_EDL-P15" />
+                <pulley divisor="2"/>
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P15-1" />
+                <pulley divisor="2"/>
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P16" />
+        </spatial> -->
+
+        <spatial name="REDL_tendon_1" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P5" />
+                <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P9-1" />
+        </spatial>
+        <spatial name="REDL_tendon_2" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P5" />
+                <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P10" />
+        </spatial>
+        <spatial name="REDL_tendon_3" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />        
+                <site site="REDL_EDL-P6" />
+                <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P11-1" />
+        </spatial>
+        <spatial name="REDL_tendon_4" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />        
+                <site site="REDL_EDL-P6" />
+                <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P12" />
+        </spatial>
+        <spatial name="REDL_tendon_5" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />        
+                <site site="REDL_EDL-P7" />
+                <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P13-1" />
+        </spatial>
+        <spatial name="REDL_tendon_6" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />        
+                <site site="REDL_EDL-P7" />
+                <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P14" />
+        </spatial>
+        <spatial name="REDL_tendon_7" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P8" />
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P15-1" />
+        </spatial>
+        <spatial name="REDL_tendon_8" group="2">
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P8" />
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P16" />
+        </spatial> 
+
+        <spatial name="REHL_tendon" group="2">
+        <site site="REHL_EHL-P1" />
+        <site site="REHL_EHL-P2" />
+        <site site="REHL_EHL-P3" />
+        <site site="REHL_EHL-P4" />
+        <site site="REHL_EHL-P5" />
+        <site site="REHL_EHL-P6" />
+        <site site="REHL_EHL-P7" />
+        </spatial>
+
+        <spatial name="RMG_tendon" group="2">
+        <site site="RMG_MG-P1" />
+        <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" />
+        <site site="RMG_MG-P2" />
+        </spatial>
+
+        <spatial name="RLG_tendon" group="2">
+        <site site="RLG_LG-P1" />
+        <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" />
+        <site site="RLG_LG-P2" />
+        </spatial>
+
+        <spatial name="RSOL_tendon" group="2">
+        <site site="RSOL_SOL-P1" />
+        <site site="RSOL_SOL-P2" />
+        </spatial>
+
+        <spatial name="RPLANT_tendon" group="2">
+        <site site="RPLANT_PLANT-P1" />
+        <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" />
+        <site site="RPLANT_PLANT-P2" />
+        </spatial>
+        
+        <!-- <spatial name="RFDL_tendon" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P4" />
+                <site site="RFDL_FDL-P9" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P5" />
+                <site site="RFDL_FDL-P10" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P10-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P11" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P6" />
+                <site site="RFDL_FDL-P12" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P12-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P13" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P7" />
+                <site site="RFDL_FDL-P14" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P14-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P15" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P8" />
+                <site site="RFDL_FDL-P16" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P16-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P17" />
+        </spatial> -->
+
+        <spatial name="RFDL_tendon_1" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P4" />
+                <site site="RFDL_FDL-P9" />
+        </spatial>
+        <spatial name="RFDL_tendon_2" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P5" />
+                <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P10-1" />
+        </spatial>
+        <spatial name="RFDL_tendon_3" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P5" />
+                <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P11" />
+        </spatial>
+        <spatial name="RFDL_tendon_4" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P6" />
+                <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P12-1" />
+        </spatial>
+        <spatial name="RFDL_tendon_5" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P6" />
+                <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P13" />
+        </spatial>
+        <spatial name="RFDL_tendon_6" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P7" />
+                <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P14-1" />
+        </spatial>
+        <spatial name="RFDL_tendon_7" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P7" />
+                <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P15" />
+        </spatial>
+        <spatial name="RFDL_tendon_8" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P8" />
+                <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P16-1" />
+        </spatial>
+        <spatial name="RFDL_tendon_9" group="2">
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P8" />
+                <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P17" />
+        </spatial>
+
+        <spatial name="RTP_tendon" group="2">
+        <site site="RTP_TP-P1" />
+        <site site="RTP_TP-P2" />
+        <site site="RTP_TP-P3" />
+        <site site="RTP_TP-P4" />
+        </spatial>
+        <spatial name="RPL_tendon" group="2">
+        <site site="RPL_PL-P1" />
+        <site site="RPL_PL-P2" />
+        <site site="RPL_PL-P3" />
+        <site site="RPL_PL-P4" />
+        <site site="RPL_PL-P5" />
+        </spatial>
+        <spatial name="RPT_tendon" group="2">
+        <site site="RPT_PT-P1" />
+        <site site="RPT_PT-P2" />
+        <site site="RPT_PT-P3" />
+        <site site="RPT_PT-P4" />
+        </spatial>
+        <spatial name="RPB_tendon" group="2">
+        <site site="RPB_PB-P1" />
+        <site site="RPB_PB-P2" />
+        <site site="RPB_PB-P3" />
+        </spatial>
+        <spatial name="RPDQA_tendon" group="2">
+        <site site="RPDQA_PDQA-P1" />
+        <site site="RPDQA_PDQA-P2" />
+        <site site="RPDQA_PDQA-P3" />
+        <site site="RPDQA_PDQA-P4" />
+        <site site="RPDQA_PDQA-P5" />
+        <site site="RPDQA_PDQA-P6" />
+        <site site="RPDQA_PDQA-P7" />
+        <site site="RPDQA_PDQA-P8" />
+        </spatial>
+        <spatial name="RPDQI_tendon" group="2">
+        <site site="RPDQI_PDQI-P1" />
+        <site site="RPDQI_PDQI-P2" />
+        <site site="RPDQI_PDQI-P3" />
+        <site site="RPDQI_PDQI-P4" />
+        <site site="RPDQI_PDQI-P5" />
+        <site site="RPDQI_PDQI-P6" />
+        <site site="RPDQI_PDQI-P7" />
+        </spatial>
+
+        <!-- <spatial name="RTensorFasciaeLatae_tendon" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S4_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S3_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S2_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S1_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="RIliacCrest"/>
+        </spatial> -->
+
+        <spatial name="RTensorFasciaeLatae_tendon_1" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S4_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTensorFasciaeLatae_tendon_2" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S3_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTensorFasciaeLatae_tendon_3" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S2_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTensorFasciaeLatae_tendon_4" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S1_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTensorFasciaeLatae_tendon_5" group="2">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="LIliacCrest"/>
+        </spatial>
+    </tendon>
+</mujoco>

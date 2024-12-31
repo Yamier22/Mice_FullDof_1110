@@ -1,0 +1,667 @@
+<mujoco>
+    <tendon>
+        <fixed name="Cervical_x" class="Cervical_x">
+            <joint joint="T_C7_x" coef="0.125"/>
+            <joint joint="C7_C6_x" coef="0.125"/>
+            <joint joint="C6_C5_x" coef="0.125"/>
+            <joint joint="C5_C4_x" coef="0.125"/>
+            <joint joint="C4_C3_x" coef="0.125"/>
+            <joint joint="C3_C2_x" coef="0.125"/>
+            <joint joint="C2_C1_x" coef="0.125"/>
+            <joint joint="C1_head_x" coef="0.125"/>
+        </fixed>
+
+        <fixed name="Cervical_y" class="Cervical_y">
+            <joint joint="T_C7_y" coef="0.125"/>
+            <joint joint="C7_C6_y" coef="0.125"/>
+            <joint joint="C6_C5_y" coef="0.125"/>
+            <joint joint="C5_C4_y" coef="0.125"/>
+            <joint joint="C4_C3_y" coef="0.125"/>
+            <joint joint="C3_C2_y" coef="0.125"/>
+            <joint joint="C2_C1_y" coef="0.125"/>
+            <joint joint="C1_head_y" coef="0.125"/>
+        </fixed>
+
+        <fixed name="Cervical_z" class="Cervical_z">
+            <joint joint="T_C7_z" coef="0.125"/>
+            <joint joint="C7_C6_z" coef="0.125"/>
+            <joint joint="C6_C5_z" coef="0.125"/>
+            <joint joint="C5_C4_z" coef="0.125"/>
+            <joint joint="C4_C3_z" coef="0.125"/>
+            <joint joint="C3_C2_z" coef="0.125"/>
+            <joint joint="C2_C1_z" coef="0.125"/>
+            <joint joint="C1_head_z" coef="0.125"/>
+        </fixed>
+
+        <fixed name="Lumbar_x" class="Lumbar_x">
+            <joint joint="T_L1_x" coef="0.142"/>
+            <joint joint="L1_L2_x" coef="0.142"/>
+            <joint joint="L2_L3_x" coef="0.142"/>
+            <joint joint="L3_L4_x" coef="0.142"/>
+            <joint joint="L4_L5_x" coef="0.142"/>
+            <joint joint="L5_L6_x" coef="0.142"/>
+            <joint joint="L6_S1_x" coef="0.148"/>
+        </fixed>
+
+        <fixed name="Lumbar_y" class="Lumbar_y">
+            <joint joint="T_L1_y" coef="0.142"/>
+            <joint joint="L1_L2_y" coef="0.142"/>
+            <joint joint="L2_L3_y" coef="0.142"/>
+            <joint joint="L3_L4_y" coef="0.142"/>
+            <joint joint="L4_L5_y" coef="0.142"/>
+            <joint joint="L5_L6_y" coef="0.142"/>
+            <joint joint="L6_S1_y" coef="0.148"/>
+        </fixed>
+
+        <fixed name="Lumbar_z" class="Lumbar_z">
+            <joint joint="T_L1_z" coef="0.142"/>
+            <joint joint="L1_L2_z" coef="0.142"/>
+            <joint joint="L2_L3_z" coef="0.142"/>
+            <joint joint="L3_L4_z" coef="0.142"/>
+            <joint joint="L4_L5_z" coef="0.142"/>
+            <joint joint="L5_L6_z" coef="0.142"/>
+            <joint joint="L6_S1_z" coef="0.148"/>
+        </fixed>
+
+        <fixed name="Caudal_y" class="Caudal_y">
+            <joint joint="S4_CA1_y" coef="0.038"/>
+            <joint joint="CA1_CA2_y" coef="0.037"/>
+            <joint joint="CA2_CA3_y" coef="0.037"/>
+            <joint joint="CA3_CA4_y" coef="0.037"/>
+            <joint joint="CA4_CA5_y" coef="0.037"/>
+            <joint joint="CA5_CA6_y" coef="0.037"/>
+            <joint joint="CA6_CA7_y" coef="0.037"/>
+            <joint joint="CA7_CA8_y" coef="0.037"/>
+            <joint joint="CA8_CA9_y" coef="0.037"/>
+            <joint joint="CA9_CA10_y" coef="0.037"/>
+            <joint joint="CA10_CA11_y" coef="0.037"/>
+            <joint joint="CA11_CA12_y" coef="0.037"/>
+            <joint joint="CA12_CA13_y" coef="0.037"/>
+            <joint joint="CA13_CA14_y" coef="0.037"/>
+            <joint joint="CA14_CA15_y" coef="0.037"/>
+            <joint joint="CA15_CA16_y" coef="0.037"/>
+            <joint joint="CA16_CA17_y" coef="0.037"/>
+            <joint joint="CA17_CA18_y" coef="0.037"/>
+            <joint joint="CA18_CA19_y" coef="0.037"/>
+            <joint joint="CA19_CA20_y" coef="0.037"/>
+            <joint joint="CA20_CA21_y" coef="0.037"/>
+            <joint joint="CA21_CA22_y" coef="0.037"/>
+            <joint joint="CA22_CA23_y" coef="0.037"/>
+            <joint joint="CA23_CA24_y" coef="0.037"/>
+            <joint joint="CA24_CA25_y" coef="0.037"/>
+            <joint joint="CA25_CA26_y" coef="0.037"/>
+            <joint joint="CA26_CA27_y" coef="0.037"/>
+        </fixed>
+
+        <fixed name="Caudal_z" class="Caudal_z">
+            <joint joint="S4_CA1_z" coef="0.038"/>
+            <joint joint="CA1_CA2_z" coef="0.037"/>
+            <joint joint="CA2_CA3_z" coef="0.037"/>
+            <joint joint="CA3_CA4_z" coef="0.037"/>
+            <joint joint="CA4_CA5_z" coef="0.037"/>
+            <joint joint="CA5_CA6_z" coef="0.037"/>
+            <joint joint="CA6_CA7_z" coef="0.037"/>
+            <joint joint="CA7_CA8_z" coef="0.037"/>
+            <joint joint="CA8_CA9_z" coef="0.037"/>
+            <joint joint="CA9_CA10_z" coef="0.037"/>
+            <joint joint="CA10_CA11_z" coef="0.037"/>
+            <joint joint="CA11_CA12_z" coef="0.037"/>
+            <joint joint="CA12_CA13_z" coef="0.037"/>
+            <joint joint="CA13_CA14_z" coef="0.037"/>
+            <joint joint="CA14_CA15_z" coef="0.037"/>
+            <joint joint="CA15_CA16_z" coef="0.037"/>
+            <joint joint="CA16_CA17_z" coef="0.037"/>
+            <joint joint="CA17_CA18_z" coef="0.037"/>
+            <joint joint="CA18_CA19_z" coef="0.037"/>
+            <joint joint="CA19_CA20_z" coef="0.037"/>
+            <joint joint="CA20_CA21_z" coef="0.037"/>
+            <joint joint="CA21_CA22_z" coef="0.037"/>
+            <joint joint="CA22_CA23_z" coef="0.037"/>
+            <joint joint="CA23_CA24_z" coef="0.037"/>
+            <joint joint="CA24_CA25_z" coef="0.037"/>
+            <joint joint="CA25_CA26_z" coef="0.037"/>
+            <joint joint="CA26_CA27_z" coef="0.037"/>
+        </fixed>
+        
+        <spatial name="LGM_dorsal_tendon" group="3">
+        <site site="LGM_dorsal_GM_dorsal-P1" />
+        <site site="LGM_dorsal_GM_dorsal-P2" />
+        <site site="LGM_dorsal_GM_dorsal-P3" />
+        <site site="LGM_dorsal_GM_dorsal-P4" />
+        </spatial>
+        <spatial name="LGM_mid_tendon" group="3">
+        <site site="LGM_mid_GM_mid-P1" />
+        <site site="LGM_mid_GM_mid-P2" />
+        <site site="LGM_mid_GM_mid-P3" />
+        <site site="LGM_mid_GM_mid-P4" />
+        </spatial>
+        <spatial name="LGM_ventral_tendon" group="3">
+        <site site="LGM_ventral_GM_ventral-P1" />
+        <site site="LGM_ventral_GM_ventral-P2" />
+        <site site="LGM_ventral_GM_ventral-P3" />
+        <site site="LGM_ventral_GM_ventral-P4" />
+        </spatial>
+        <spatial name="LOE_tendon" group="3">
+        <site site="LOE_OE-P1" />
+        <site site="LOE_OE-P2" />
+        </spatial>
+        <spatial name="LOI_tendon" group="3">
+        <site site="LOI_OI-P1" />
+        <geom geom="LOI_at_Femur_cylinder" sidesite="LOI_at_Femur_cylinder_OI_1_sidesite" />
+        <site site="LOI_OI-P2" />
+        </spatial>
+        <spatial name="LGEM_tendon" group="3">
+        <site site="LGEM_GEM-P1" />
+        <site site="LGEM_GEM-P2" />
+        </spatial>
+        <spatial name="LQF_tendon" group="3">
+        <site site="LQF_QF-P1" />
+        <geom geom="LQF_at_Thigh_cylinder" sidesite="LQF_at_Thigh_cylinder_QF_1_sidesite" />
+        <site site="LQF_QF-P2" />
+        </spatial>
+        <spatial name="LAM_tendon" group="3">
+        <site site="LAM_AM-P1" />
+        <site site="LAM_AM-P2" />
+        </spatial>
+        <spatial name="LAL_tendon" group="3">
+        <site site="LAL_AL-P1" />
+        <site site="LAL_AL-P2" />
+        </spatial>
+        <spatial name="LAB_tendon" group="3">
+        <site site="LAB_AB-P1" />
+        <geom geom="LAB_at_Quads_ellipsoid_AB" sidesite="LAB_at_Quads_ellipsoid_AB_1_sidesite" />
+        <site site="LAB_AB-P2" />
+        </spatial>
+        <spatial name="LGP_tendon" group="3">
+        <site site="LGP_GP-P1" />
+        <geom geom="LGA_at_Pelvis_cylinder" sidesite="LGA_at_Pelvis_cylinder_GP_1_sidesite" />
+        <site site="LGP_GP-P2" />
+        </spatial>
+        <spatial name="LGA_tendon" group="3">
+        <site site="LGA_GA-P1" />
+        <geom geom="LGA_at_Pelvis_cylinder" sidesite="LGA_at_Pelvis_cylinder_GA_1_sidesite" />
+        <site site="LGA_GA-P2" />
+        </spatial>
+
+        <!-- <spatial name="LPMA_tendon" group="3">
+            <site site="L6_LTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="LPMA_PMA-P2" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+                <site site="L5_LTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+                <site site="L4_LTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+                <site site="L3_LTransverseProcess" />
+        </spatial> -->
+
+        <spatial name="LPMA_tendon_1" group="3">
+            <site site="L6_LTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="LPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+                <site site="L5_LTransverseProcess" />
+        </spatial>
+        <spatial name="LPMA_tendon_2" group="3">
+            <site site="L6_LTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="LPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+                <site site="L4_LTransverseProcess" />
+        </spatial>
+        <spatial name="LPMA_tendon_3" group="3">
+            <site site="L6_LTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="LPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+                <site site="L3_LTransverseProcess" />
+        </spatial>
+
+        <spatial name="LPMI_tendon" group="3">
+            <site site="LPMI_PMI-P2" />
+            <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+            <site site="L4_LTransverseProcess"/>
+            <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+            <site site="L3_LTransverseProcess"/>
+            <geom geom="L3_Psoas_cylinder" sidesite="L3_PsoasSideSite" />
+            <site site="L2_LTransverseProcess"/>
+            <geom geom="L2_Psoas_cylinder" sidesite="L2_PsoasSideSite" />
+            <site site="L1_LTransverseProcess"/>
+            <geom geom="L1_Psoas_cylinder" sidesite="L1_PsoasSideSite" />
+            <site site="T13_LTransverseProcess"/>           
+        </spatial>
+
+        <spatial name="LILI_tendon" group="3">
+        <site site="LILI_ILI-P1" />
+        <geom geom="LHip_Flexors_at_Quads_ellipsoid_ILI" sidesite="LHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" />
+        <site site="LILI_ILI-P2" />
+        </spatial>
+        <spatial name="LPECT_tendon" group="3">
+        <site site="LPECT_PECT-P1" />
+        <geom geom="LPECT_at_Quads_ellipsoid_PECT" sidesite="LPECT_at_Quads_ellipsoid_PECT_1_sidesite" />
+        <site site="LPECT_PECT-P2" />
+        </spatial>
+        <spatial name="LCF_tendon" group="3">
+        <site site="LCF_CF-P1" />
+        <site site="LCF_CF-P2" />
+        <site site="LCF_CF-P3" />
+        <site site="LCF_CF-P4" />
+        </spatial>
+        <spatial name="LSM_tendon" group="3">
+        <site site="LSM_SM-P1" />
+        <site site="LSM_SM-P2" />
+        </spatial>
+        <spatial name="LST_tendon" group="3">
+        <site site="LST_ST-P1" />
+        <geom geom="LST_at_Pelvis_sphere" sidesite="LST_at_Pelvis_sphere_ST_1_sidesite" />
+        <site site="LST_ST-P2" />
+        </spatial>
+        <spatial name="LBFA_tendon" group="3">
+        <site site="LBFA_BFA-P1" />
+        <geom geom="LCF_BFA_at_Thigh_ellipsoid_BFA" sidesite="LCF_BFA_at_Thigh_ellipsoid_BFA_1_sidesite" />
+        <site site="LBFA_BFA-P2" />
+        <site site="LBFA_BFA-P3" />
+        </spatial>
+        <spatial name="LBFP_cranial_tendon" group="3">
+        <site site="LBFP_cranial_BFP_cranial-P1" />
+        <site site="LBFP_cranial_BFP_cranial-P2" />
+        </spatial>
+        <spatial name="LBFP_mid_tendon" group="3">
+        <site site="LBFP_mid_BFP_mid-P1" />
+        <site site="LBFP_mid_BFP_mid-P2" />
+        </spatial>
+        <spatial name="LBFP_caudal_tendon" group="3">
+        <site site="LBFP_caudal_BFP_caudal-P1" />
+        <site site="LBFP_caudal_BFP_caudal-P2" />
+        </spatial>
+        <spatial name="LRF_tendon" group="3">
+        <site site="LRF_RF-P1" />
+        <site site="LRF_RF-P2" />
+        </spatial>
+        <spatial name="LVM_tendon" group="3">
+        <site site="LVM_VM-P1" />
+        <site site="LVM_VM-P2" />
+        </spatial>
+        <spatial name="LVL_tendon" group="3">
+        <site site="LVL_VL-P1" />
+        <site site="LVL_VL-P2" />
+        </spatial>
+        <spatial name="LVI_tendon" group="3">
+        <site site="LVI_VI-P1" />
+        <site site="LVI_VI-P2" />
+        </spatial>
+        <spatial name="LPOP_tendon" group="3">
+        <site site="LPOP_POP-P1" />
+        <site site="LPOP_POP-P2" />
+        </spatial>
+        <spatial name="LTA_tendon" group="3">
+        <site site="LTA_TA-P1" />
+        <site site="LTA_TA-P2" />
+        <site site="LTA_TA-P3" />
+        <site site="LTA_TA-P4" />
+        <site site="LTA_TA-P5" />
+        <site site="LTA_TA-P6" />
+        </spatial>
+
+        <!-- <spatial name="LEDL_tendon" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P5" />
+                <site site="LEDL_EDL-P9" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P9-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P10" />
+                
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P6" />
+                <site site="LEDL_EDL-P11" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P11-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P12" />
+                
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P7" />
+                <site site="LEDL_EDL-P13" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P13-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P14" />
+
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P8" />
+                <site site="LEDL_EDL-P15" />
+                <pulley divisor="2"/>
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P15-1" />
+                <pulley divisor="2"/>
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P16" />
+        </spatial> -->
+
+        <spatial name="LEDL_tendon_1" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P5" />
+                <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P9-1" />
+        </spatial>
+        <spatial name="LEDL_tendon_2" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P5" />
+                <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P10" />
+        </spatial>
+        <spatial name="LEDL_tendon_3" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />        
+                <site site="LEDL_EDL-P6" />
+                <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P11-1" />
+        </spatial>
+        <spatial name="LEDL_tendon_4" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />        
+                <site site="LEDL_EDL-P6" />
+                <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P12" />
+        </spatial>
+        <spatial name="LEDL_tendon_5" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />        
+                <site site="LEDL_EDL-P7" />
+                <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P13-1" />
+        </spatial>
+        <spatial name="LEDL_tendon_6" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />        
+                <site site="LEDL_EDL-P7" />
+                <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P14" />
+        </spatial>
+        <spatial name="LEDL_tendon_7" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P8" />
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P15-1" />
+        </spatial>
+        <spatial name="LEDL_tendon_8" group="3">
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P8" />
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P16" />
+        </spatial> 
+
+
+        <spatial name="LEHL_tendon" group="3">
+        <site site="LEHL_EHL-P1" />
+        <site site="LEHL_EHL-P2" />
+        <site site="LEHL_EHL-P3" />
+        <site site="LEHL_EHL-P4" />
+        <site site="LEHL_EHL-P5" />
+        <site site="LEHL_EHL-P6" />
+        <site site="LEHL_EHL-P7" />
+        </spatial>
+
+        <spatial name="LMG_tendon" group="3">
+        <site site="LMG_MG-P1" />
+        <geom geom="LPlantarflexors_at_Tibia_cylinder" sidesite="LPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" />
+        <site site="LMG_MG-P2" />
+        </spatial>
+        <spatial name="LLG_tendon" group="3">
+        <site site="LLG_LG-P1" />
+        <geom geom="LPlantarflexors_at_Tibia_cylinder" sidesite="LPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" />
+        <site site="LLG_LG-P2" />
+        </spatial>
+        <spatial name="LSOL_tendon" group="3">
+        <site site="LSOL_SOL-P1" />
+        <site site="LSOL_SOL-P2" />
+        </spatial>
+        <spatial name="LPLANT_tendon" group="3">
+        <site site="LPLANT_PLANT-P1" />
+        <geom geom="LPlantarflexors_at_Tibia_cylinder" sidesite="LPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" />
+        <site site="LPLANT_PLANT-P2" />
+        </spatial>
+
+        <!-- <spatial name="LFDL_tendon" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P4" />
+                <site site="LFDL_FDL-P9" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P5" />
+                <site site="LFDL_FDL-P10" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P10-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P11" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P6" />
+                <site site="LFDL_FDL-P12" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P12-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P13" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P7" />
+                <site site="LFDL_FDL-P14" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P14-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P15" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P8" />
+                <site site="LFDL_FDL-P16" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P16-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P17" />
+        </spatial> -->
+
+        <spatial name="LFDL_tendon_1" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P4" />
+                <site site="LFDL_FDL-P9" />
+        </spatial>
+        <spatial name="LFDL_tendon_2" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P5" />
+                <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P10-1" />
+        </spatial>
+        <spatial name="LFDL_tendon_3" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P5" />
+                <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P11" />
+        </spatial>
+        <spatial name="LFDL_tendon_4" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P6" />
+                <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P12-1" />
+        </spatial>
+        <spatial name="LFDL_tendon_5" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P6" />
+                <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P13" />
+        </spatial>
+        <spatial name="LFDL_tendon_6" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P7" />
+                <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P14-1" />
+        </spatial>
+        <spatial name="LFDL_tendon_7" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P7" />
+                <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P15" />
+        </spatial>
+        <spatial name="LFDL_tendon_8" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P8" />
+                <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P16-1" />
+        </spatial>
+        <spatial name="LFDL_tendon_9" group="3">
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P8" />
+                <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P17" />
+        </spatial>
+
+        <spatial name="LTP_tendon" group="3">
+        <site site="LTP_TP-P1" />
+        <site site="LTP_TP-P2" />
+        <site site="LTP_TP-P3" />
+        <site site="LTP_TP-P4" />
+        </spatial>
+        <spatial name="LPL_tendon" group="3">
+        <site site="LPL_PL-P1" />
+        <site site="LPL_PL-P2" />
+        <site site="LPL_PL-P3" />
+        <site site="LPL_PL-P4" />
+        <site site="LPL_PL-P5" />
+        </spatial>
+        <spatial name="LPT_tendon" group="3">
+        <site site="LPT_PT-P1" />
+        <site site="LPT_PT-P2" />
+        <site site="LPT_PT-P3" />
+        <site site="LPT_PT-P4" />
+        </spatial>
+        <spatial name="LPB_tendon" group="3">
+        <site site="LPB_PB-P1" />
+        <site site="LPB_PB-P2" />
+        <site site="LPB_PB-P3" />
+        </spatial>
+        <spatial name="LPDQA_tendon" group="3">
+        <site site="LPDQA_PDQA-P1" />
+        <site site="LPDQA_PDQA-P2" />
+        <site site="LPDQA_PDQA-P3" />
+        <site site="LPDQA_PDQA-P4" />
+        <site site="LPDQA_PDQA-P5" />
+        <site site="LPDQA_PDQA-P6" />
+        <site site="LPDQA_PDQA-P7" />
+        <site site="LPDQA_PDQA-P8" />
+        </spatial>
+        <spatial name="LPDQI_tendon" group="3">
+        <site site="LPDQI_PDQI-P1" />
+        <site site="LPDQI_PDQI-P2" />
+        <site site="LPDQI_PDQI-P3" />
+        <site site="LPDQI_PDQI-P4" />
+        <site site="LPDQI_PDQI-P5" />
+        <site site="LPDQI_PDQI-P6" />
+        <site site="LPDQI_PDQI-P7" />
+        </spatial>
+
+        <spatial name="LTensorFasciaeLatae_tendon_1" group="3">
+            <site site="LTensorFasciaeLatae_1"/>
+            <site site="LTensorFasciaeLatae_2"/>
+                <geom geom="LTensorFasciaeLatae_cylinder" sidesite="LTensorFasciaeLatae_3" />
+                <site site="S4_SpinousProcess"/>
+        </spatial>
+        <spatial name="LTensorFasciaeLatae_tendon_2" group="3">
+            <site site="LTensorFasciaeLatae_1"/>
+            <site site="LTensorFasciaeLatae_2"/>
+                <geom geom="LTensorFasciaeLatae_cylinder" sidesite="LTensorFasciaeLatae_3" />
+                <site site="S3_SpinousProcess"/>
+        </spatial>
+        <spatial name="LTensorFasciaeLatae_tendon_3" group="3">
+            <site site="LTensorFasciaeLatae_1"/>
+            <site site="LTensorFasciaeLatae_2"/>
+                <geom geom="LTensorFasciaeLatae_cylinder" sidesite="LTensorFasciaeLatae_3" />
+                <site site="S2_SpinousProcess"/>
+        </spatial>
+        <spatial name="LTensorFasciaeLatae_tendon_4" group="3">
+            <site site="LTensorFasciaeLatae_1"/>
+            <site site="LTensorFasciaeLatae_2"/>
+                <geom geom="LTensorFasciaeLatae_cylinder" sidesite="LTensorFasciaeLatae_3" />
+                <site site="S1_SpinousProcess"/>
+        </spatial>
+        <spatial name="LTensorFasciaeLatae_tendon_5" group="3">
+            <site site="LTensorFasciaeLatae_1"/>
+            <site site="LTensorFasciaeLatae_2"/>
+                <geom geom="LTensorFasciaeLatae_cylinder" sidesite="LTensorFasciaeLatae_3" />
+                <site site="LIliacCrest"/>
+        </spatial>
+    </tendon>
+</mujoco>

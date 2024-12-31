@@ -1,0 +1,74 @@
+<mujoco>
+    <asset>
+        <mesh name="RFemur" file="RFemur.stl" />
+        <mesh name="RTibfib" file="RTibfib.stl" />
+        <mesh name="RPatella" file="RPatella.stl" />
+        <mesh name="LFemur" file="LFemur.stl" />
+        <mesh name="LTibfib" file="LTibfib.stl" />
+        <mesh name="LPatella" file="LPatella.stl" />
+    
+        <mesh name="RTarsalMetatarsal" file="RTarsalMetatarsal.stl"/>
+        <mesh name="RPhalange1_1" file="RPhalange1_1.stl"/>
+        <mesh name="RPhalange1_3" file="RPhalange1_3.stl"/>
+        <mesh name="RPhalange2_1" file="RPhalange2_1.stl"/>
+        <mesh name="RPhalange2_2" file="RPhalange2_2.stl"/>
+        <mesh name="RPhalange2_3" file="RPhalange2_3.stl"/>
+        <mesh name="RPhalange3_1" file="RPhalange3_1.stl"/>
+        <mesh name="RPhalange3_2" file="RPhalange3_2.stl"/>
+        <mesh name="RPhalange3_3" file="RPhalange3_3.stl"/>
+        <mesh name="RPhalange4_1" file="RPhalange4_1.stl"/>
+        <mesh name="RPhalange4_2" file="RPhalange4_2.stl"/>
+        <mesh name="RPhalange4_3" file="RPhalange4_3.stl"/>
+        <mesh name="RPhalange5_1" file="RPhalange5_1.stl"/>
+        <mesh name="RPhalange5_2" file="RPhalange5_2.stl"/>
+        <mesh name="RPhalange5_3" file="RPhalange5_3.stl"/>
+
+        <mesh name="RFMetaphalange" file="RFPMetaphalange.stl"/>
+        <mesh name="RFPhalange1_1" file="RFPhalange1_1.stl"/>
+        <mesh name="RFPhalange1_3" file="RFPhalange1_3.stl"/>
+        <mesh name="RFPhalange2_1" file="RFPhalange2_1.stl"/>
+        <mesh name="RFPhalange2_2" file="RFPhalange2_2.stl"/>
+        <mesh name="RFPhalange2_3" file="RFPhalange2_3.stl"/>
+        <mesh name="RFPhalange3_1" file="RFPhalange3_1.stl"/>
+        <mesh name="RFPhalange3_2" file="RFPhalange3_2.stl"/>
+        <mesh name="RFPhalange3_3" file="RFPhalange3_3.stl"/>
+        <mesh name="RFPhalange4_1" file="RFPhalange4_1.stl"/>
+        <mesh name="RFPhalange4_2" file="RFPhalange4_2.stl"/>
+        <mesh name="RFPhalange4_3" file="RFPhalange4_3.stl"/>
+        <mesh name="RFPhalange5_1" file="RFPhalange5_1.stl"/>
+        <mesh name="RFPhalange5_2" file="RFPhalange5_2.stl"/>
+        <mesh name="RFPhalange5_3" file="RFPhalange5_3.stl"/>
+
+        <mesh name="LTarsalMetatarsal" file="LTarsalMetatarsal.stl"/>
+        <mesh name="LPhalange1_1" file="LPhalange1_1.stl"/>
+        <mesh name="LPhalange1_3" file="LPhalange1_3.stl"/>
+        <mesh name="LPhalange2_1" file="LPhalange2_1.stl"/>
+        <mesh name="LPhalange2_2" file="LPhalange2_2.stl"/>
+        <mesh name="LPhalange2_3" file="LPhalange2_3.stl"/>
+        <mesh name="LPhalange3_1" file="LPhalange3_1.stl"/>
+        <mesh name="LPhalange3_2" file="LPhalange3_2.stl"/>
+        <mesh name="LPhalange3_3" file="LPhalange3_3.stl"/>
+        <mesh name="LPhalange4_1" file="LPhalange4_1.stl"/>
+        <mesh name="LPhalange4_2" file="LPhalange4_2.stl"/>
+        <mesh name="LPhalange4_3" file="LPhalange4_3.stl"/>
+        <mesh name="LPhalange5_1" file="LPhalange5_1.stl"/>
+        <mesh name="LPhalange5_2" file="LPhalange5_2.stl"/>
+        <mesh name="LPhalange5_3" file="LPhalange5_3.stl"/>
+
+        <mesh name="LFMetaphalange" file="LFPMetaphalange.stl"/>
+        <mesh name="LFPhalange1_1" file="LFPhalange1_1.stl"/>
+        <mesh name="LFPhalange1_3" file="LFPhalange1_3.stl"/>
+        <mesh name="LFPhalange2_1" file="LFPhalange2_1.stl"/>
+        <mesh name="LFPhalange2_2" file="LFPhalange2_2.stl"/>
+        <mesh name="LFPhalange2_3" file="LFPhalange2_3.stl"/>
+        <mesh name="LFPhalange3_1" file="LFPhalange3_1.stl"/>
+        <mesh name="LFPhalange3_2" file="LFPhalange3_2.stl"/>
+        <mesh name="LFPhalange3_3" file="LFPhalange3_3.stl"/>
+        <mesh name="LFPhalange4_1" file="LFPhalange4_1.stl"/>
+        <mesh name="LFPhalange4_2" file="LFPhalange4_2.stl"/>
+        <mesh name="LFPhalange4_3" file="LFPhalange4_3.stl"/>
+        <mesh name="LFPhalange5_1" file="LFPhalange5_1.stl"/>
+        <mesh name="LFPhalange5_2" file="LFPhalange5_2.stl"/>
+        <mesh name="LFPhalange5_3" file="LFPhalange5_3.stl"/>
+    </asset>
+</mujoco>

@@ -1,0 +1,97 @@
+<mujoco>
+    <asset>
+        <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1" />
+
+        <mesh name="RScapula" file="RScapula.stl"/>
+        <mesh name="RClavicle" file="RClavicle.stl"/>
+        <mesh name="LScapula" file="LScapula.stl"/>
+        <mesh name="LClavicle" file="LClavicle.stl"/>
+        <mesh name="RPelvis" file="RPelvis.stl"/>
+        <mesh name="LPelvis" file="LPelvis.stl"/>
+        <mesh name="Head" file="Head.stl"/>
+
+        <mesh name="C1" file="C1.stl"/>
+        <mesh name="C2" file="C2.stl"/>
+        <mesh name="C3" file="C3.stl"/>
+        <mesh name="C4" file="C4.stl"/>
+        <mesh name="C5" file="C5.stl"/>
+        <mesh name="C6" file="C6.stl"/>
+        <mesh name="C7" file="C7.stl"/>
+        <mesh name="L1" file="L1.stl"/>
+        <mesh name="L2" file="L2.stl"/>
+        <mesh name="L3" file="L3.stl"/>
+        <mesh name="L4" file="L4.stl"/>
+        <mesh name="L5" file="L5.stl"/>
+        <mesh name="L6" file="L6.stl"/>
+        <mesh name="Sacral" file="S1-4.stl"/>
+
+        <mesh name="CA1" file="CA1.stl"/>
+        <mesh name="CA2" file="CA2.stl"/>
+        <mesh name="CA3" file="CA3.stl"/>
+        <mesh name="CA4" file="CA4.stl"/>
+        <mesh name="CA5" file="CA5.stl"/>
+        <mesh name="CA6" file="CA6.stl"/>
+        <mesh name="CA7" file="CA7.stl"/>
+        <mesh name="CA8" file="CA8.stl"/>
+        <mesh name="CA9" file="CA9.stl"/>
+        <mesh name="CA10" file="CA10.stl"/>
+        <mesh name="CA11" file="CA11.stl"/>
+        <mesh name="CA12" file="CA12.stl"/>
+        <mesh name="CA13" file="CA13.stl"/>
+        <mesh name="CA14" file="CA14.stl"/>
+        <mesh name="CA15" file="CA15.stl"/>
+        <mesh name="CA16" file="CA16.stl"/>
+        <mesh name="CA17" file="CA17.stl"/>
+        <mesh name="CA18" file="CA18.stl"/>
+        <mesh name="CA19" file="CA19.stl"/>
+        <mesh name="CA20" file="CA20.stl"/>
+        <mesh name="CA21" file="CA21.stl"/>
+        <mesh name="CA22" file="CA22.stl"/>
+        <mesh name="CA23" file="CA23.stl"/>
+        <mesh name="CA24" file="CA24.stl"/>
+        <mesh name="CA25" file="CA25.stl"/>
+        <mesh name="CA26" file="CA26.stl"/>
+        <mesh name="CA27" file="CA27_28.stl"/>
+    
+        <mesh name="T13" file="T13.stl"/>
+        <mesh name="Rib_13R" file="Rib_13R.stl"/>
+        <mesh name="Rib_13L" file="Rib_13L.stl"/>
+        <mesh name="T12" file="T12.stl"/>
+        <mesh name="Rib_12R" file="Rib_12R.stl"/>
+        <mesh name="Rib_12L" file="Rib_12L.stl"/>
+        <mesh name="T11" file="T11.stl"/>
+        <mesh name="Rib_11R" file="Rib_11R.stl"/>
+        <mesh name="Rib_11L" file="Rib_11L.stl"/>
+        <mesh name="T10" file="T10.stl"/>
+        <mesh name="Rib_10R" file="Rib_10R.stl"/>
+        <mesh name="Rib_10L" file="Rib_10L.stl"/>
+        <mesh name="T9" file="T9.stl"/>
+        <mesh name="Rib_9R" file="Rib_9R.stl"/>
+        <mesh name="Rib_9L" file="Rib_9L.stl"/>
+        <mesh name="T8" file="T8.stl"/>
+        <mesh name="Rib_8R" file="Rib_8R.stl"/>
+        <mesh name="Rib_8L" file="Rib_8L.stl"/>
+        <mesh name="T7" file="T7.stl"/>
+        <mesh name="Rib_7R" file="Rib_7R.stl"/>
+        <mesh name="Rib_7L" file="Rib_7L.stl"/>
+        <mesh name="T6" file="T6.stl"/>
+        <mesh name="Rib_6R" file="Rib_6R.stl"/>
+        <mesh name="Rib_6L" file="Rib_6L.stl"/>
+        <mesh name="T5" file="T5.stl"/>
+        <mesh name="Rib_5R" file="Rib_5R.stl"/>
+        <mesh name="Rib_5L" file="Rib_5L.stl"/>
+        <mesh name="T4" file="T4.stl"/>
+        <mesh name="Rib_4R" file="Rib_4R.stl"/>
+        <mesh name="Rib_4L" file="Rib_4L.stl"/>
+        <mesh name="T3" file="T3.stl"/>
+        <mesh name="Rib_3R" file="Rib_3R.stl"/>
+        <mesh name="Rib_3L" file="Rib_3L.stl"/>
+        <mesh name="T2" file="T2.stl"/>
+        <mesh name="Rib_2R" file="Rib_2R.stl"/>
+        <mesh name="Rib_2L" file="Rib_2L.stl"/>
+        <mesh name="T1" file="T1.stl"/>
+        <mesh name="Rib_1R" file="Rib_1R.stl"/>
+        <mesh name="Rib_1L" file="Rib_1L.stl"/>
+        <mesh name="Sternum" file="Sternum.stl"/>
+    </asset>
+</mujoco>

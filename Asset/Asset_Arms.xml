@@ -1,0 +1,13 @@
+<mujoco>
+    <asset>
+        <mesh name="RHumerus" file="RHumerus.stl" />
+        <mesh name="RUlna" file="RUlna.stl" />
+        <mesh name="RRadius" file="RRadius.stl" />
+        <mesh name="RCarpi" file="RCarpi.stl" />
+
+        <mesh name="LHumerus" file="LHumerus.stl" />
+        <mesh name="LUlna" file="LUlna.stl" />
+        <mesh name="LRadius" file="LRadius.stl" />
+        <mesh name="LCarpi" file="LCarpi.stl" />
+    </asset>
+</mujoco>

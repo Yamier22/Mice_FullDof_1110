@@ -1,0 +1,1797 @@
+<mujoco>
+    <tendon>
+    
+        <spatial name="Rintercostal_tendon" group="4">
+			<site site="Rib1Rinter" />
+			<site site="Rib2Rinter" />
+			<site site="Rib3Rinter" />
+			<site site="Rib4Rinter" />
+			<site site="Rib5Rinter" />
+			<site site="Rib6Rinter" />
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+        </spatial>
+
+        <spatial name="Rrectusabdominis_tendon" group="4">
+            <site site="Rcristaepubis" />
+            <site site="Rib6Rrectusabdominis" />
+        </spatial>
+
+        <spatial name="Rexternaloblique_tendon_1" group="4">
+			<site site="Rib5Rinter" />
+			<site site="Rib6Rinter" />
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+        </spatial>
+
+        <spatial name="Rexternaloblique_tendon_2" group="4">
+			<site site="Rib5Rinter" />
+			<site site="Rib6Rinter" />
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Rinternaloblique_tendon_1" group="4">
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+        </spatial>
+
+        <spatial name="Rinternaloblique_tendon_2" group="4">
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Rtransversusabdominis_tendon_1" group="4">
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+        </spatial>
+
+        <spatial name="Rtransversusabdominis_tendon_2" group="4">
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <!-- <spatial name="RLatissimusDorsi_tendon" group="4">
+            <site site="RLatissimusDorsi_1" />
+            <site site="RLatissimusDorsi_3" />
+            <pulley divisor="5"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_1" />
+            <site site="T11_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_2" />
+            <site site="T12_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_3" />
+            <site site="T13_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_4" />
+            <site site="L1_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_5" />
+            <site site="L2_SpinousProcess" />
+        </spatial>-->
+
+        <spatial name="RLatissimusDorsi_tendon_1" group="4">
+            <site site="RLatissimusDorsi_1" />
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_1" />
+            <site site="T11_SpinousProcess" />
+        </spatial>
+        <spatial name="RLatissimusDorsi_tendon_2" group="4">
+            <site site="RLatissimusDorsi_1" />
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_2" />
+            <site site="T12_SpinousProcess" />
+        </spatial>   
+        <spatial name="RLatissimusDorsi_tendon_3" group="4">
+            <site site="RLatissimusDorsi_1" />   
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_3" />
+            <site site="T13_SpinousProcess" />
+        </spatial> 
+        <spatial name="RLatissimusDorsi_tendon_4" group="4">
+            <site site="RLatissimusDorsi_1" />   
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_4" />
+            <site site="L1_SpinousProcess" />
+        </spatial> 
+        <spatial name="RLatissimusDorsi_tendon_5" group="4">
+            <site site="RLatissimusDorsi_1" /> 
+            <site site="RLatissimusDorsi_3" />
+            <site site="RLatissimusDorsi_4_5" />
+            <site site="L2_SpinousProcess" />
+        </spatial>
+
+        <!-- <spatial name="RSerratusVentralisThoracis_tendon" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_1_2"/>
+            <site site="RSerratusVentralisThoracis_1_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_2_2"/>
+            <site site="RSerratusVentralisThoracis_2_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_3_2"/>
+            <site site="RSerratusVentralisThoracis_3_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_4_2"/>
+            <site site="RSerratusVentralisThoracis_4_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_5_2"/>
+            <site site="RSerratusVentralisThoracis_5_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_6_2"/>
+            <site site="RSerratusVentralisThoracis_6_1"/>
+            <pulley divisor="7"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_7_2"/>
+            <site site="RSerratusVentralisThoracis_7_1"/>
+
+        </spatial>-->
+
+        <spatial name="RSerratusVentralisThoracis_tendon_1" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_1_2"/>
+            <site site="RSerratusVentralisThoracis_1_1"/>
+        </spatial>
+        <spatial name="RSerratusVentralisThoracis_tendon_2" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_2_2"/>
+            <site site="RSerratusVentralisThoracis_2_1"/>
+        </spatial>    
+        <spatial name="RSerratusVentralisThoracis_tendon_3" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>    
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_3_2"/>
+            <site site="RSerratusVentralisThoracis_3_1"/>
+        </spatial>
+        <spatial name="RSerratusVentralisThoracis_tendon_4" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/> 
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_4_2"/>
+            <site site="RSerratusVentralisThoracis_4_1"/>
+        </spatial>
+        <spatial name="RSerratusVentralisThoracis_tendon_5" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_5_2"/>
+            <site site="RSerratusVentralisThoracis_5_1"/>
+        </spatial>    
+        <spatial name="RSerratusVentralisThoracis_tendon_6" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>    
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_6_2"/>
+            <site site="RSerratusVentralisThoracis_6_1"/>
+        </spatial>    
+        <spatial name="RSerratusVentralisThoracis_tendon_7" group="4">
+            <site site="RSerratusVentralisThoracis_scapula_1"/>    
+            <site site="RSerratusVentralisThoracis_scapula_2"/>
+            <site site="RSerratusVentralisThoracis_7_2"/>
+            <site site="RSerratusVentralisThoracis_7_1"/>
+        </spatial>
+
+        <!-- <spatial name="RSerratusVentralisCervicis_tendon" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" />
+            <site site="RSerratusVentralisCervicis_1" />
+            <pulley divisor="5"/>
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C3_RTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C4_RTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C5_RTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C6_RTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C7_RTransverseProcess" />
+        </spatial> -->
+
+        <spatial name="RSerratusVentralisCervicis_tendon_1" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" />
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C3_RTransverseProcess" />
+        </spatial>
+        <spatial name="RSerratusVentralisCervicis_tendon_2" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" />   
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C4_RTransverseProcess" />
+        </spatial>    
+        <spatial name="RSerratusVentralisCervicis_tendon_3" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" /> 
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C5_RTransverseProcess" />
+        </spatial>
+        <spatial name="RSerratusVentralisCervicis_tendon_4" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" /> 
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C6_RTransverseProcess" />
+        </spatial>
+        <spatial name="RSerratusVentralisCervicis_tendon_5" group="4">
+            <site site="RSerratusVentralisCervicis_scapula_1" /> 
+            <site site="RSerratusVentralisCervicis_1" />
+            <site site="C7_RTransverseProcess" />
+        </spatial>
+
+        <!-- <spatial name="RPectoralisMajor_tendon" group="4">
+            <site site="RPectoralisMajor_Humerus_1" />
+            <site site="RPectoralisMajor_1" />
+            <pulley divisor="4"/>
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_2" />
+            <pulley divisor="4"/>
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_3" />
+            <pulley divisor="4"/>
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_4" />
+            <pulley divisor="4"/>
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_5" />
+        </spatial> -->
+
+        <spatial name="RPectoralisMajor_tendon_1" group="4">
+            <site site="RPectoralisMajor_Humerus_1" />
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_2" />
+        </spatial>
+        <spatial name="RPectoralisMajor_tendon_2" group="4">
+            <site site="RPectoralisMajor_Humerus_1" />
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_3" />
+        </spatial>
+        <spatial name="RPectoralisMajor_tendon_3" group="4">
+            <site site="RPectoralisMajor_Humerus_1" />
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_4" />
+        </spatial>
+        <spatial name="RPectoralisMajor_tendon_4" group="4">
+            <site site="RPectoralisMajor_Humerus_1" />
+            <site site="RPectoralisMajor_1" />
+            <site site="RPectoralisMajor_5" />
+        </spatial>
+
+        <spatial name="RPectoralisMinor_tendon" group="4">
+            <site site="RPectoralisMinor_coraco_1" />
+            <site site="RPectoralisMinor_2" />
+            <site site="RPectoralisMinor_3" />
+            <site site="RPectoralisMinor_4" />
+        </spatial>
+
+        <spatial name="RPectoralisMinimus_tendon" group="4">
+            <site site="RPectoralisMinimus_Humerus_1" />
+            <site site="RPectoralisMinimus_1" />
+            <site site="RPectoralisMinimus_2" />
+            <site site="RPectoralisMinimus_3" />
+            <site site="RPectoralisMinimus_4" />
+        </spatial>
+
+        <!-- <spatial name="RScalenusAnterior_tendon" group="4">
+            <site site="RScalenusAnterior_1" />
+            <site site="RScalenusAnterior_2" />
+            <pulley divisor="4"/>
+            <site site="RScalenusAnterior_2" />
+            <site site="C3_RTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="RScalenusAnterior_2" />
+            <site site="C4_RTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="RScalenusAnterior_2" />
+            <site site="C5_RTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="RScalenusAnterior_2" />
+            <site site="C6_RTransverseProcess" />
+        </spatial> -->
+
+        <spatial name="RScalenusAnterior_tendon_1" group="4">
+            <site site="RScalenusAnterior_1" />
+            <site site="RScalenusAnterior_2" />
+            <site site="C3_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusAnterior_tendon_2" group="4">
+            <site site="RScalenusAnterior_1" />
+            <site site="RScalenusAnterior_2" />
+            <site site="C4_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusAnterior_tendon_3" group="4">
+            <site site="RScalenusAnterior_1" />
+            <site site="RScalenusAnterior_2" />
+            <site site="C5_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusAnterior_tendon_4" group="4">
+            <site site="RScalenusAnterior_1" />
+            <site site="RScalenusAnterior_2" />
+            <site site="C6_RTransverseProcess" />
+        </spatial>
+
+        <!-- <spatial name="RScalenusMedius_tendon" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C2_RTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C3_RTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C4_RTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C5_RTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C6_RTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="RScalenusMedius_2" />
+            <site site="C7_RTransverseProcess" />
+        </spatial> -->
+
+        <spatial name="RScalenusMedius_tendon_1" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C2_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusMedius_tendon_2" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C3_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusMedius_tendon_3" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C4_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusMedius_tendon_4" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C5_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusMedius_tendon_5" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C6_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusMedius_tendon_6" group="4">
+            <site site="RScalenusMedius_1" />
+            <site site="RScalenusMedius_2" />
+            <site site="C7_RTransverseProcess" />
+        </spatial>
+
+        <!-- <spatial name="RScalenusPosterior_tendon" group="4">
+            <site site="RScalenusPosterior_1" />
+            <site site="RScalenusPosterior_2" />
+            <pulley divisor="3"/>
+            <site site="RScalenusPosterior_2" />
+            <site site="C5_RTransverseProcess" />
+            <pulley divisor="3"/>
+            <site site="RScalenusPosterior_2" />
+            <site site="C6_RTransverseProcess" />
+            <pulley divisor="3"/>
+            <site site="RScalenusPosterior_2" />
+            <site site="C7_RTransverseProcess" />
+        </spatial> -->
+        <spatial name="RScalenusPosterior_tendon_1" group="4">
+            <site site="RScalenusPosterior_1" />
+            <site site="RScalenusPosterior_2" />
+            <site site="C5_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusPosterior_tendon_2" group="4">
+            <site site="RScalenusPosterior_1" />    
+            <site site="RScalenusPosterior_2" />
+            <site site="C6_RTransverseProcess" />
+        </spatial>
+        <spatial name="RScalenusPosterior_tendon_3" group="4">
+            <site site="RScalenusPosterior_1" />
+            <site site="RScalenusPosterior_2" />
+            <site site="C7_RTransverseProcess" />
+        </spatial>
+
+        <spatial name="RRectusCapitisPosteriorMajor_tendon" group="4">
+            <site site="RRectusCapitisPosteriorMajor"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="RRectusCapitisPosteriorMinor_tendon" group="4">
+            <site site="RRectusCapitisPosteriorMinor"/>
+            <site site="C1_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="RObliquusCapitisSuperior_tendon" group="4">
+            <site site="RObliquusCapitisSuperior"/>
+            <site site="C1_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RObliquusCapitisInferior_tendon" group="4">
+            <site site="C1_RTransverseProcess"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RSemispinalisCapitisMedial_tendon" group="4">
+            <site site="RSemispinalisCapitisMedial_1"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <pulley divisor="2"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T4_RTransverseProcess"/>
+            <pulley divisor="2"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T5_RTransverseProcess"/>
+        </spatial> -->
+
+        <spatial name="RSemispinalisCapitisMedial_tendon_1" group="4">
+            <site site="RSemispinalisCapitisMedial_1"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisMedial_tendon_2" group="4">
+            <site site="RSemispinalisCapitisMedial_1"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T5_RTransverseProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RSemispinalisCapitisLateral_tendon" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C3_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C4_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C6_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C7_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="T1_RTransverseProcess"/>
+        </spatial> -->
+
+        <spatial name="RSemispinalisCapitisLateral_tendon_1" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C3_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisLateral_tendon_2" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisLateral_tendon_3" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C5_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisLateral_tendon_4" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C6_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisLateral_tendon_5" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C7_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RSemispinalisCapitisLateral_tendon_6" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="T1_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RCleidomastoideus_tendon" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="RCleidocephalicus_tendon" group="4">
+            <site site="RCleidocephalicus_1"/>
+            <site site="RCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="RSternomastoideus_tendon" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RSternomastoideus_2"/>
+        </spatial>
+
+        <!-- <spatial name="RSpleniusCapitis_tendon" group="4">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T2_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T3_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="RSpleniusCapitis_1"/>
+            <site site="RMastoidProcess"/>
+        </spatial> -->
+
+        <spatial name="RSpleniusCapitis_tendon_1" group="5">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="C7_SpinousProcess"/>
+        </spatial>
+        <spatial name="RSpleniusCapitis_tendon_2" group="5">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T1_SpinousProcess"/>
+        </spatial>
+        <spatial name="RSpleniusCapitis_tendon_3" group="5">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T2_SpinousProcess"/>
+        </spatial>
+        <spatial name="RSpleniusCapitis_tendon_4" group="5">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T3_SpinousProcess"/>
+        </spatial>
+        <spatial name="RSpleniusCapitis_tendon_5" group="5">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="RSpleniusCapitis_1"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RRhomboideusCapitis_tendon" group="4">
+            <site site="RRhomboideusCapitis_1"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <pulley divisor="2"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <pulley divisor="2"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RMastoidProcess"/>
+        </spatial> -->
+
+        <spatial name="RRhomboideusCapitis_tendon_1" group="4">
+            <site site="RRhomboideusCapitis_1"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+        </spatial>
+        <spatial name="RRhomboideusCapitis_tendon_2" group="4">
+            <site site="RRhomboideusCapitis_1"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RRhomboideusCervicis_tendon" group="4">
+            <site site="RRhomboideusCervicis_1"/>
+            <site site="RRhomboideusCervicis_2"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSpleniusCapitis_2_1"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RMastoidProcess"/>
+        </spatial> -->
+
+        <spatial name="RRhomboideusCervicis_tendon_1" group="4">
+            <site site="RRhomboideusCervicis_1"/>
+            <site site="RRhomboideusCervicis_2"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSpleniusCapitis_2_1"/>
+        </spatial>
+        <spatial name="RRhomboideusCervicis_tendon_2" group="4">
+            <site site="RRhomboideusCervicis_1"/>
+            <site site="RRhomboideusCervicis_2"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+        </spatial>
+        <spatial name="RRhomboideusCervicis_tendon_3" group="4">
+            <site site="RRhomboideusCervicis_1"/>
+            <site site="RRhomboideusCervicis_2"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RRhomboideusThoracis_tendon" group="4">
+            <site site="RRhomboideusThoracis_1"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T2_SpinousProcess"/>
+        </spatial> -->
+
+        <spatial name="RRhomboideusThoracis_tendon_1" group="4">
+            <site site="RRhomboideusThoracis_1"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="C7_SpinousProcess"/>
+        </spatial>
+        <spatial name="RRhomboideusThoracis_tendon_2" group="4">
+            <site site="RRhomboideusThoracis_1"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T1_SpinousProcess"/>
+        </spatial>
+        <spatial name="RRhomboideusThoracis_tendon_3" group="4">
+            <site site="RRhomboideusThoracis_1"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="ROmotransversarius_tendon" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="ROmotransversarius_1"/>
+            <site site="ROmotransversarius_2"/>
+        </spatial>
+
+        <spatial name="RSubclavius_tendon" group="4">
+            <site site="RSubclavius_1"/>
+            <site site="RSubclavius_2"/>
+        </spatial>
+
+        <!-- <spatial name="RTrapeziusCervical_tendon" group="4">
+            <site site="RTrapezius_head_1"/>
+            <site site="RTrapezius_head_2"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_1"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_2"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_3"/>
+        </spatial> -->
+
+        <spatial name="RTrapeziusCervical_tendon_1" group="4">
+            <site site="RTrapezius_head_1"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_1"/>
+        </spatial>
+        <spatial name="RTrapeziusCervical_tendon_2" group="4">
+            <site site="RTrapezius_head_1"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_2"/>
+        </spatial>
+        <spatial name="RTrapeziusCervical_tendon_3" group="4">
+            <site site="RTrapezius_head_1"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_3"/>
+        </spatial>
+
+        <!-- <spatial name="RTrapeziusThoracic_tendon" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4" />
+            <site site="T9_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T10_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T11_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T12_SpinousProcess"/>
+        </spatial> -->
+
+        <spatial name="RTrapeziusThoracic_tendon_1" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <site site="T9_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTrapeziusThoracic_tendon_2" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <site site="T10_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTrapeziusThoracic_tendon_3" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <site site="T11_SpinousProcess"/>
+        </spatial>
+        <spatial name="RTrapeziusThoracic_tendon_4" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <site site="T12_SpinousProcess"/>
+        </spatial>
+
+
+        <!-- <spatial name="RLongusCapitis_tendon" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C3_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+        </spatial> -->
+
+        <spatial name="RLongusCapitis_tendon_1" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C3_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongusCapitis_tendon_2" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongusCapitis_tendon_3" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongusCapitis_tendon_4" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RLongusCapitisSuperiorOblique_tendon" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="C2_RVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C3_RTransverseProcess"/>
+            <pulley divisor="3"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C4_RTransverseProcess"/>
+            <pulley divisor="3"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C5_RTransverseProcess"/>
+        </spatial> -->
+
+        <spatial name="RLongusCapitisSuperiorOblique_tendon_1" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C3_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongusCapitisSuperiorOblique_tendon_2" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongusCapitisSuperiorOblique_tendon_3" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="C2_RVentralArch"/>
+            <site site="C5_RTransverseProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RLongusCapitisInferiorOblique_tendon" group="4">
+            <site site="C5_RTransverseProcess"/>
+            <site site="C6_RTransverseProcess"/>
+            <site site="C7_RVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T1_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T2_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial> -->
+
+        <spatial name="RLongusCapitisInferiorOblique_tendon_1" group="4">
+            <site site="C5_RTransverseProcess"/>
+            <site site="C6_RTransverseProcess"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T1_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisInferiorOblique_tendon_2" group="4">
+            <site site="C5_RTransverseProcess"/>
+            <site site="C6_RTransverseProcess"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T2_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisInferiorOblique_tendon_3" group="4">
+            <site site="C5_RTransverseProcess"/>
+            <site site="C6_RTransverseProcess"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial>
+
+        <!-- <spatial name="RLongusCapitisVertical_tendon" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C3_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C4_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <pulley divisor="4"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C5_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C6_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_RVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T1_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T2_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial> -->
+
+        <spatial name="RLongusCapitisVertical_tendon_1" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C3_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_2" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C4_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_3" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_4" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C5_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_5" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C6_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_6" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_7" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_RVentralArch"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_8" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T1_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_9" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T2_VentralSurface"/>
+        </spatial>
+        <spatial name="RLongusCapitisVertical_tendon_10" group="4">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_RVentralArch"/>
+            <site site="C5_RVentralArch"/>
+            <site site="C7_RVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial>
+
+        <spatial name="RIntertransversariCervicis_tendon" group="4">
+            <site site="C1_RTransverseProcess"/>
+            <site site="C2_RTransverseProcess"/>
+            <site site="C3_RTransverseProcess"/>
+            <site site="C4_RTransverseProcess"/>
+            <site site="C5_RTransverseProcess"/>
+            <site site="C6_RTransverseProcess"/>
+            <site site="C7_RTransverseProcess"/>
+            <site site="T1_RTransverseProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RLongissimusCapitis_tendon" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C7_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T1_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T2_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T3_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T4_RTransverseProcess"/>
+        </spatial> -->
+
+        <spatial name="RLongissimusCapitis_tendon_1" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_2" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_3" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C7_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_4" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T1_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_5" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_6" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T3_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusCapitis_tendon_7" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T4_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RLongissimusThoracis_tendon" group="4">
+            <site site="T1_RTransverseProcess"/>
+            <site site="T2_RTransverseProcess"/>
+            <site site="T3_RTransverseProcess"/>
+            <site site="T4_RTransverseProcess"/>
+            <site site="T5_RTransverseProcess"/>
+            <site site="T6_RTransverseProcess"/>
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+        </spatial>
+
+        <!-- <spatial name="RLongissimusLumborum_tendon" group="4">
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L4_RTransverseProcess"/>
+                <site site="L5_RTransverseProcess"/>
+                <site site="L6_RTransverseProcess"/>
+                <site site="S1_RTransverseProcess"/>
+                <site site="S2_RTransverseProcess"/>
+                <site site="S3_RTransverseProcess"/>
+                <site site="S4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L4_RTransverseProcess"/>
+                <site site="RIliacCrest"/>
+        </spatial> -->
+
+        <spatial name="RLongissimusLumborum_tendon_1" group="4">
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L6_RTransverseProcess"/>
+            <site site="S1_RTransverseProcess"/>
+            <site site="S2_RTransverseProcess"/>
+            <site site="S3_RTransverseProcess"/>
+            <site site="S4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RLongissimusLumborum_tendon_2" group="4">
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="RIliacCrest"/>
+        </spatial>
+
+        <!-- <spatial name="RMultifidusCervicis_tendon" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C2_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C4_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                <site site="C5_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="C7_RArticularProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T1_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C3_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                <site site="C7_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T3_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C4_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C6_SpinousProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T2_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T3_RTransverseProcess"/>
+
+        </spatial> -->
+
+        <spatial name="RMultifidusCervicis_tendon_1" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C2_SpinousProcess"/>
+                <site site="C4_RArticularProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_2" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="C7_RArticularProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_3" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T1_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_4" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_5" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C3_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_6" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_7" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T3_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_8" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_9" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_10" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_11" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C6_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_12" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusCervicis_tendon_13" group="4">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T3_RTransverseProcess"/>
+        </spatial>
+
+
+        <!-- <spatial name="RMultifidusLumborum_tendon" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T12_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L1_RTransverseProcess"/>
+                    <pulley divisor="2"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T11_SpinousProcess"/>
+                    <site site="L2_RTransverseProcess"/>
+                    <pulley divisor="2"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T10_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                    <site site="L4_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="L6_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L5_RTransverseProcess"/>
+                    <site site="L5_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                    <site site="L6_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S4_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T13_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T13_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="T13_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L1_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L3_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L6_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="S1_RTransverseProcess"/>
+
+        </spatial> -->
+
+        <spatial name="RMultifidusLumborum_tendon_1" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T12_SpinousProcess"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T11_SpinousProcess"/>
+                    <site site="L2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_2" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T12_SpinousProcess"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T10_SpinousProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_3" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="L6_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_4" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_5" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_6" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+        </spatial>  
+        <spatial name="RMultifidusLumborum_tendon_7" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L5_RTransverseProcess"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+        </spatial>  
+        <spatial name="RMultifidusLumborum_tendon_8" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L5_RTransverseProcess"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+        </spatial>  
+        <spatial name="RMultifidusLumborum_tendon_9" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+        </spatial>  
+        <spatial name="RMultifidusLumborum_tendon_10" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+        </spatial> 
+        <spatial name="RMultifidusLumborum_tendon_11" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+        </spatial> 
+        <spatial name="RMultifidusLumborum_tendon_12" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+        </spatial> 
+        <spatial name="RMultifidusLumborum_tendon_13" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S4_RTransverseProcess"/>
+        </spatial> 
+        <spatial name="RMultifidusLumborum_tendon_14" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_15" group="4">
+            <site site="L3_SpinousProcess"/>                
+            <site site="L3_RTransverseProcess"/>
+            <site site="T13_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_16" group="4">
+            <site site="L3_SpinousProcess"/>                
+            <site site="L3_RTransverseProcess"/>
+                <site site="T13_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_17" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_18" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_19" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_20" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L6_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RMultifidusLumborum_tendon_21" group="4">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="S1_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RIliocostalisThoracis_tendon" group="4">
+            <site site="C7_RTransverseProcess"/>
+            <site site="T1_RRibAngle"/>
+            <site site="T2_RRibAngle"/>
+            <site site="T3_RRibAngle"/>
+            <site site="T4_RRibAngle"/>
+            <site site="T5_RRibAngle"/>
+            <site site="T6_RRibAngle"/>
+            <site site="T7_RRibAngle"/>
+            <site site="T8_RRibAngle"/>
+            <site site="T9_RRibAngle"/>
+            <site site="T10_RRibAngle"/>
+            <site site="T11_RRibAngle"/>
+            <site site="T12_RRibAngle"/>
+        </spatial>
+
+        <!-- <spatial name="RQuadratusLumborum_tendon" group="4">
+            <site site="RIliacCrest"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_RTransverseProcess"/>
+                <site site="T13_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_RTransverseProcess"/>
+                <site site="T13_RRibAngle"/>
+        </spatial> -->
+
+        <spatial name="RQuadratusLumborum_tendon_1" group="4">
+            <site site="RIliacCrest"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+                <site site="T13_RTransverseProcess"/>
+        </spatial>
+        <spatial name="RQuadratusLumborum_tendon_2" group="4">
+            <site site="RIliacCrest"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+                <site site="T13_RRibAngle"/>    
+        </spatial>
+
+        <spatial name="RSCVentralMedial_tendon" group="4">
+            <site site="S4_VentralSurface"/>
+            <site site="CA1_RSCVentralMedial"/>
+            <site site="CA2_RSCVentralMedial"/>
+            <site site="CA3_RSCVentralMedial"/>
+            <site site="CA4_RSCVentralMedial"/>
+            <site site="CA5_RSCVentralMedial"/>
+            <site site="CA6_RSCVentralMedial"/>
+            <site site="CA7_RSCVentralMedial"/>
+            <site site="CA8_RSCVentralMedial"/>
+            <site site="CA9_RSCVentralMedial"/>
+            <site site="CA10_RSCVentralMedial"/>
+            <site site="CA11_RSCVentralMedial"/>
+            <site site="CA12_RSCVentralMedial"/>
+            <site site="CA13_RSCVentralMedial"/>
+            <site site="CA14_RSCVentralMedial"/>
+            <site site="CA15_RSCVentralMedial"/>
+            <site site="CA16_RSCVentralMedial"/>
+            <site site="CA17_RSCVentralMedial"/>
+            <site site="CA18_RSCVentralMedial"/>
+            <site site="CA19_RSCVentralMedial"/>
+            <site site="CA20_RSCVentralMedial"/>
+            <site site="CA21_RSCVentralMedial"/>
+            <site site="CA22_RSCVentralMedial"/>
+            <site site="CA23_RSCVentralMedial"/>
+            <site site="CA24_RSCVentralMedial"/>
+            <site site="CA25_RSCVentralMedial"/>
+            <site site="CA26_RSCVentralMedial"/>
+            <site site="CA27_RSCVentralMedial"/>
+        </spatial>
+
+        <spatial name="RSCVentralLateral_tendon" group="4">
+            <site site="L6_VentralSurface"/>
+            <site site="S1_VentralSurface"/>
+            <site site="S2_VentralSurface"/>
+            <site site="S3_VentralSurface"/>
+            <site site="S4_RTransverseProcess"/>
+            <site site="CA1_RSCVentralLateral"/>
+            <site site="CA2_RSCVentralLateral"/>
+            <site site="CA3_RSCVentralLateral"/>
+            <site site="CA4_RSCVentralLateral"/>
+            <site site="CA5_RSCVentralLateral"/>
+            <site site="CA6_RSCVentralLateral"/>
+            <site site="CA7_RSCVentralLateral"/>
+            <site site="CA8_RSCVentralLateral"/>
+            <site site="CA9_RSCVentralLateral"/>
+            <site site="CA10_RSCVentralLateral"/>
+            <site site="CA11_RSCVentralLateral"/>
+            <site site="CA12_RSCVentralLateral"/>
+            <site site="CA13_RSCVentralLateral"/>
+            <site site="CA14_RSCVentralLateral"/>
+            <site site="CA15_RSCVentralLateral"/>
+            <site site="CA16_RSCVentralLateral"/>
+            <site site="CA17_RSCVentralLateral"/>
+            <site site="CA18_RSCVentralLateral"/>
+            <site site="CA19_RSCVentralLateral"/>
+            <site site="CA20_RSCVentralLateral"/>
+            <site site="CA21_RSCVentralLateral"/>
+            <site site="CA22_RSCVentralLateral"/>
+            <site site="CA23_RSCVentralLateral"/>
+            <site site="CA24_RSCVentralLateral"/>
+            <site site="CA25_RSCVentralLateral"/>
+            <site site="CA26_RSCVentralLateral"/>
+            <site site="CA27_RSCVentralLateral"/>
+        </spatial>
+
+        <spatial name="RSCDorsalMedial_tendon" group="4">
+            <site site="S1_SpinousProcess"/>
+            <site site="S2_SpinousProcess"/>
+            <site site="S3_SpinousProcess"/>
+            <site site="S4_SpinousProcess"/>
+            <site site="CA1_RSCDorsalMedial"/>
+            <site site="CA2_RSCDorsalMedial"/>
+            <site site="CA3_RSCDorsalMedial"/>
+            <site site="CA4_RSCDorsalMedial"/>
+            <site site="CA5_RSCDorsalMedial"/>
+            <site site="CA6_RSCDorsalMedial"/>
+            <site site="CA7_RSCDorsalMedial"/>
+            <site site="CA8_RSCDorsalMedial"/>
+            <site site="CA9_RSCDorsalMedial"/>
+            <site site="CA10_RSCDorsalMedial"/>
+            <site site="CA11_RSCDorsalMedial"/>
+            <site site="CA12_RSCDorsalMedial"/>
+            <site site="CA13_RSCDorsalMedial"/>
+            <site site="CA14_RSCDorsalMedial"/>
+            <site site="CA15_RSCDorsalMedial"/>
+            <site site="CA16_RSCDorsalMedial"/>
+            <site site="CA17_RSCDorsalMedial"/>
+            <site site="CA18_RSCDorsalMedial"/>
+            <site site="CA19_RSCDorsalMedial"/>
+            <site site="CA20_RSCDorsalMedial"/>
+            <site site="CA21_RSCDorsalMedial"/>
+            <site site="CA22_RSCDorsalMedial"/>
+            <site site="CA23_RSCDorsalMedial"/>
+            <site site="CA24_RSCDorsalMedial"/>
+            <site site="CA25_RSCDorsalMedial"/>
+            <site site="CA26_RSCDorsalMedial"/>
+            <site site="CA27_RSCDorsalMedial"/>
+        </spatial>
+
+        <spatial name="RSCDorsalLateral_tendon" group="4">
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L6_RTransverseProcess"/>
+            <site site="S1_RTransverseProcess"/>
+            <site site="S2_RTransverseProcess"/>
+            <site site="S3_RTransverseProcess"/>
+            <site site="S4_RTransverseProcess"/>
+            <site site="CA1_RSCDorsalLateral"/>
+            <site site="CA2_RSCDorsalLateral"/>
+            <site site="CA3_RSCDorsalLateral"/>
+            <site site="CA4_RSCDorsalLateral"/>
+            <site site="CA5_RSCDorsalLateral"/>
+            <site site="CA6_RSCDorsalLateral"/>
+            <site site="CA7_RSCDorsalLateral"/>
+            <site site="CA8_RSCDorsalLateral"/>
+            <site site="CA9_RSCDorsalLateral"/>
+            <site site="CA10_RSCDorsalLateral"/>
+            <site site="CA11_RSCDorsalLateral"/>
+            <site site="CA12_RSCDorsalLateral"/>
+            <site site="CA13_RSCDorsalLateral"/>
+            <site site="CA14_RSCDorsalLateral"/>
+            <site site="CA15_RSCDorsalLateral"/>
+            <site site="CA16_RSCDorsalLateral"/>
+            <site site="CA17_RSCDorsalLateral"/>
+            <site site="CA18_RSCDorsalLateral"/>
+            <site site="CA19_RSCDorsalLateral"/>
+            <site site="CA20_RSCDorsalLateral"/>
+            <site site="CA21_RSCDorsalLateral"/>
+            <site site="CA22_RSCDorsalLateral"/>
+            <site site="CA23_RSCDorsalLateral"/>
+            <site site="CA24_RSCDorsalLateral"/>
+            <site site="CA25_RSCDorsalLateral"/>
+            <site site="CA26_RSCDorsalLateral"/>
+            <site site="CA27_RSCDorsalLateral"/>
+        </spatial>
+
+        <spatial name="RIntertransversariiDorsalesCaudae_tendon" group="4">
+            <site site="S3_RLateralSurface"/>
+            <site site="S4_RLateralSurface"/>
+            <site site="CA1_RLateralSurface"/>
+            <site site="CA2_RSCDorsalLateral"/>
+            <site site="CA3_RSCDorsalLateral"/>
+            <site site="CA4_RSCDorsalLateral"/>
+            <site site="CA5_RSCDorsalLateral"/>
+            <site site="CA6_RSCDorsalLateral"/>
+        </spatial>
+
+        <spatial name="RIntertransversariiVentralesCaudae_tendon" group="4">
+            <site site="S4_RLateralSurface"/>
+            <site site="CA1_RSCVentralLateral"/>
+            <site site="CA2_RSCVentralLateral"/>
+            <site site="CA3_RSCVentralLateral"/>
+            <site site="CA4_RSCVentralLateral"/>
+            <site site="CA5_RSCVentralLateral"/>
+            <site site="CA6_RSCVentralLateral"/>
+            <site site="CA7_RSCVentralLateral"/>
+            <site site="CA8_RSCVentralLateral"/>
+            <site site="CA9_RSCVentralLateral"/>
+            <site site="CA10_RSCVentralLateral"/>
+            <site site="CA11_RSCVentralLateral"/>
+            <site site="CA12_RSCVentralLateral"/>
+            <site site="CA13_RSCVentralLateral"/>
+            <site site="CA14_RSCVentralLateral"/>
+            <site site="CA15_RSCVentralLateral"/>
+            <site site="CA16_RSCVentralLateral"/>
+            <site site="CA17_RSCVentralLateral"/>
+            <site site="CA18_RSCVentralLateral"/>
+            <site site="CA19_RSCVentralLateral"/>
+            <site site="CA20_RSCVentralLateral"/>
+            <site site="CA21_RSCVentralLateral"/>
+            <site site="CA22_RSCVentralLateral"/>
+            <site site="CA23_RSCVentralLateral"/>
+            <site site="CA24_RSCVentralLateral"/>
+            <site site="CA25_RSCVentralLateral"/>
+            <site site="CA26_RSCVentralLateral"/>
+            <site site="CA27_RSCVentralLateral"/>
+        </spatial>
+
+        <spatial name="RCoccygeus_tendon" group="4">
+            <site site="RIschiaticSpine"/>
+            <site site="CA1_RSCVentralLateral"/>
+            <site site="CA2_RSCVentralLateral"/>
+            <site site="CA3_RSCVentralLateral"/>
+            <site site="CA4_RSCVentralLateral"/>
+            <site site="CA5_RSCVentralLateral"/>
+        </spatial>                
+    </tendon>
+</mujoco>

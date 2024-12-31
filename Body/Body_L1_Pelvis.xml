@@ -1,0 +1,220 @@
+<mujoco>
+    <body name="L1" pos="0.0005 0.00 0.00075" gravcomp="0">
+        <geom name="L1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L1" density="1908"/>
+        <geom name="L1_Psoas_cylinder" size="0.002 0.004" pos="-0.002 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+        <joint name="T_L1_x" class="Lumbar_x" pos="0 0 0.001" axis="0.9848 0 0.1736" group="0"/>
+        <joint name="T_L1_y" class="Lumbar_y" pos="0 0 0.001" axis="0 1 0" group="0"/>
+        <joint name="T_L1_z" class="Lumbar_z" pos="0 0 0.001" axis="-0.1736 0 0.9848" group="0"/>
+        <site name="L1_SpinousProcess" pos="-0.0025 0 0.002" size="0.0005" group="5"/>
+        <site name="L1_RTransverseProcess" pos="-0.001 -0.00175 0.0005" size="0.0005" group="5"/>
+        <site name="L1_LTransverseProcess" pos="-0.001 0.00175 0.0005" size="0.0005" group="5"/>
+        <site name="L1_PsoasSideSite" pos="-0.0025 0 -0.005" size="0.0005" group="5"/>
+        
+        <site name="RLatissimusDorsi_4_4" pos="0.001 -0.005 0.0002" size="0.0005" group="5" rgba="1 0 0 1"/>
+        <site name="LLatissimusDorsi_4_4" pos="0.001 0.005 0.0002" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+        <body name="L2" pos="-0.004 0 -0.00015" gravcomp="0">
+            <geom name="L2" pos="0.024 0 -0.00735" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L2" density="1908"/>
+            <geom name="L2_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+            <joint name="L1_L2_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736" group="0"/>
+            <joint name="L1_L2_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
+            <joint name="L1_L2_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848" group="0"/>
+            <site name="L2_SpinousProcess" pos="-0.001 0 0.001" size="0.0005" group="5"/>
+            <site name="L2_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
+            <site name="L2_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
+            <site name="L2_PsoasSideSite" pos="-0.001 0 -0.005" size="0.0005" group="5"/>
+            
+            <site name="RLatissimusDorsi_4_5" pos="0.0035 -0.005 0.0003" size="0.0005" group="5" rgba="1 0 0 1"/>
+            <site name="LLatissimusDorsi_4_5" pos="0.0035 0.005 0.0003" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+            <body name="L3" pos="-0.00225 0 -0.00075" euler="0 0 0" gravcomp="0">
+                <geom name="L3" pos="0.02625 0 -0.0066" euler="0.2 0.0 0.09" type="mesh" rgba="1 1 1 1" mesh="L3" density="1908"/>
+                <geom name="L3_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+                <joint name="L2_L3_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736" group="0"/>
+                <joint name="L2_L3_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                <joint name="L2_L3_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848" group="0"/>
+                <site name="L3_SpinousProcess" pos="-0.0015 0 0.0015" size="0.0005" group="5"/>
+                <site name="L3_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
+                <site name="L3_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
+                <site name="L3_PsoasSideSite" pos="-0.0015 0 -0.005" size="0.0005" group="5"/>
+                
+                <body name="L4" pos="-0.00275 0 -0.0006" euler="0 0 0" gravcomp="0">
+                    <geom name="L4" pos="0.029 -0.001 -0.006" euler="0.2 0.0 0.05" type="mesh" rgba="1 1 1 1" mesh="L4" density="1908"/>
+                    <geom name="L4_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+                    <joint name="L3_L4_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                    <joint name="L3_L4_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                    <joint name="L3_L4_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                    <site name="L4_SpinousProcess" pos="-0.0015 0 0.002" size="0.0005" group="5"/>
+                    <site name="L4_RTransverseProcess" pos="-0.00 -0.0018 -0.00075" size="0.0005" group="5"/>
+                    <site name="L4_LTransverseProcess" pos="-0.00 0.0018 -0.00075" size="0.0005" group="5"/>
+                    <site name="L4_PsoasSideSite" pos="-0.0015 0 -0.005" size="0.0005" group="5"/>
+                    
+                    <body name="L5" pos="-0.0035 0 -0.000" gravcomp="0">
+                        <geom name="L5" pos="0.0325 -0.0025 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L5" density="1908"/>
+                        <geom name="L5_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+                        <joint name="L4_L5_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                        <joint name="L4_L5_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                        <joint name="L4_L5_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                        <site name="L5_SpinousProcess" pos="-0.001 0 0.0025" size="0.0005" group="5"/>
+                        <site name="L5_RTransverseProcess" pos="0.001 -0.0019 -0.00085" size="0.0005" group="5"/>
+                        <site name="L5_LTransverseProcess" pos="0.001 0.0019 -0.00085" size="0.0005" group="5"/>
+                        <site name="L5_PsoasSideSite" pos="-0.001 0 -0.005" size="0.0005" group="5"/>
+                        
+                        <body name="L6" pos="-0.003 0 -0.000" gravcomp="0">
+                            <geom name="L6" pos="0.0355 -0.00225 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L6" density="1908"/>
+                            <geom name="L6_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+
+                            <joint name="L5_L6_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                            <joint name="L5_L6_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                            <joint name="L5_L6_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                            <site name="L6_SpinousProcess" pos="-0.0005 0 0.00275" size="0.0005" group="5"/>
+                            <site name="L6_RTransverseProcess" pos="0.001 -0.0019 -0.00085" size="0.0005" group="5"/>
+                            <site name="L6_LTransverseProcess" pos="0.001 0.0019 -0.00085" size="0.0005" group="5"/>
+                            <site name="L6_PsoasSideSite" pos="-0.0005 0 -0.005" size="0.0005" group="5"/>
+                            <site name="L6_VentralSurface" pos="-0.0005 0 -0.001" size="0.0005" group="5"/>
+
+                            <body name="Pelvis" pos="0.0025 0.00 -0.00175" euler="0 0 0" gravcomp="0">
+                                <geom name="Sacral" pos="0.0325 -0.007 0.0025" euler="0.18 -0.2 -0.1" type="mesh" rgba="1 1 1 1" mesh="Sacral" density="1908"/>
+                                <geom name="RPelvis" pos="-0.013 -0.00325 0.002" euler="1.5707963267948966 -0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" density="1908"/>
+                                <geom name="LPelvis" pos="-0.013 0.00325 0.002" euler="1.5707963267948966 0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" density="1908" />
+
+                                <joint name="L6_S1_x" class="Lumbar_x" pos="-0.005 0 0.002" axis="1 0 0" group="0"/>
+                                <joint name="L6_S1_y" class="Lumbar_y" pos="-0.005 0 0.002" axis="0 1 0" group="0"/>
+                                <joint name="L6_S1_z" class="Lumbar_z" pos="-0.005 0 0.002" axis="0 0 1" group="0"/>
+
+                                <site name="Rcristaepubis" pos="-0.0175 -0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="Lcristaepubis" pos="-0.0175 0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="S1_SpinousProcess" pos="-0.0065 0.0 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S2_SpinousProcess" pos="-0.01 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S3_SpinousProcess" pos="-0.013 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_SpinousProcess" pos="-0.016 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                
+                                <site name="S1_RTransverseProcess" pos="-0.0055 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S2_RTransverseProcess" pos="-0.009 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S3_RTransverseProcess" pos="-0.012 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_RTransverseProcess" pos="-0.015 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="S3_RLateralSurface" pos="-0.011 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_RLateralSurface" pos="-0.0135 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                
+                                <site name="S1_LTransverseProcess" pos="-0.0055 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S2_LTransverseProcess" pos="-0.009 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S3_LTransverseProcess" pos="-0.012 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_LTransverseProcess" pos="-0.015 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="S3_LLateralSurface" pos="-0.011 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_LLateralSurface" pos="-0.0135 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="S1_VentralSurface" pos="-0.0065 0.0 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S2_VentralSurface" pos="-0.01 0.00 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S3_VentralSurface" pos="-0.013 0.00 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="S4_VentralSurface" pos="-0.016 0.00 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="RIliacCrest" pos="-0.001 -0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="LIliacCrest" pos="-0.001 0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                <site name="RIschiaticSpine" pos="-0.0125 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                <site name="LIschiaticSpine" pos="-0.0125 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                
+                                <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="RST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 -0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="RCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 -0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="ROE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 -0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                <geom name="RTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 -0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                
+                                <site name="RGA_at_Pelvis_sidesite" pos="-1.74690480e-02 -9.41424358e-04 -4.14452075e-03" size="0.0005" />
+                                <site name="RCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 -3.86699778e-03 -8.67257693e-05" size="0.0005" />
+                                <site name="ROE_at_Pelvis_sidesite" pos="-1.57157219e-02 -3.27722523e-03 -1.18206013e-05" size="0.0005" />
+                                <site name="RHip_flexors_at_pelvis_sidesite" pos="-1.13462187e-02 -2.95897147e-03  1.06590625e-04" size="0.0005" />
+                                <site name="RGM_dorsal_GM_dorsal-P1" pos="-0.00121088 -0.00349012  0.00315321" size="0.0005" />
+                                <site name="RGM_dorsal_GM_dorsal-P2" pos="-0.00708953 -0.00265458 0.00265456" size="0.0005" />
+                                <site name="RGM_mid_GM_mid-P1" pos="-1.77324580e-03 -4.72580437e-03  2.12987557e-03" size="0.0005" />
+                                <site name="RGM_mid_GM_mid-P2" pos="-6.15438951e-03 -2.96727078e-03  2.13615260e-03" size="0.0005" />
+                                <site name="RGM_ventral_GM_ventral-P1" pos="-1.84602043e-03 -3.76580857e-03  9.31705331e-04" size="0.0005" />
+                                <site name="RGM_ventral_GM_ventral-P2" pos="-5.59946420e-03 -2.84517108e-03  1.56121821e-03" size="0.0005" />
+                                <site name="ROE_OE-P1" pos="-1.73723008e-02 -2.36728226e-03 -1.36571557e-03" size="0.0005" />
+                                <site name="ROI_OI-P1" pos="-1.76571686e-02 -1.27831052e-03 -2.77408018e-03" size="0.0005" />
+                                <site name="RGEM_GEM-P1" pos="-1.49022162e-02 -2.75403603e-03  2.93806227e-03" size="0.0005" />
+                                <site name="RQF_QF-P1" pos="-1.75225711e-02 -8.88558345e-04 -2.88577953e-03" size="0.0005" />
+                                <site name="RAM_AM-P1" pos="-1.47968810e-02 -6.55230007e-04 -3.01060722e-04" size="0.0005" />
+                                <site name="RAL_AL-P1" pos="-1.43934816e-02 -7.30675671e-04 -2.65326867e-04" size="0.0005" />
+                                <site name="RAB_AB-P1" pos="-1.42781798e-02 -5.60075702e-04 -1.46158319e-04" size="0.0005" />
+                                <site name="RGP_GP-P1" pos="-1.70785883e-02 -2.12194741e-03 -1.48252234e-03" size="0.0005" />
+                                <site name="RGA_at_Pelvis_cylinder_GP_1_sidesite" pos="-1.88779132e-02  7.34804888e-04 -4.31926197e-03" size="0.0005" />
+                                <site name="RGA_GA-P1" pos="-1.69404757e-02 -4.47613371e-04 -1.27244989e-03" size="0.0005" />
+                                <site name="RGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02  8.20247864e-04 -2.57538241e-03" size="0.0005" />
+                                <site name="RPMA_PMA-P1" pos="-2.46678589e-03 -7.30153709e-04  2.99259102e-03" size="0.0005" />
+                                <site name="RPMI_PMI-P1" pos="-4.76280248e-03 -4.08819906e-04  2.37846364e-03" size="0.0005" />
+                                <site name="RILI_ILI-P1" pos="-2.57531467e-03 -3.52753438e-03  4.87287796e-04" size="0.0005" />
+                                <site name="RPECT_PECT-P1" pos="-1.30256598e-02 -1.12137593e-03  1.78088148e-04" size="0.0005" />
+                                <site name="RCF_CF-P1" pos="-1.58869176e-02 -3.40067430e-03  2.60621564e-03" size="0.0005" />
+                                <site name="RSM_SM-P1" pos="-1.71251073e-02 -3.77418026e-03  1.41702290e-03" size="0.0005" />
+                                <site name="RST_ST-P1" pos="-1.86524054e-02 -3.57029160e-03  3.08650186e-04" size="0.0005" />
+                                <site name="RST_at_Pelvis_sphere_ST_1_sidesite" pos="-1.86391023e-02 -3.55782360e-03  2.57138491e-05" size="0.0005" />
+                                <site name="RBFA_BFA-P1" pos="-1.62694283e-02 -3.56797292e-03  2.66449710e-03" size="0.0005" />
+                                <site name="RBFP_cranial_BFP_cranial-P1" pos="-1.66702992e-02 -3.72362703e-03  2.36975262e-03" size="0.0005" />
+                                <site name="RBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 -3.86607058e-03  1.83094496e-03" size="0.0005" />
+                                <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005" />
+                                <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005" />
+                                <site name="RTensorFasciaeLatae_3" pos="-0.009 -0.005 0.005" size="0.0005"/>
+
+                                <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="LST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="LCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="LOE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+                                <geom name="LHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 0.0025 0.0015" euler="-1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                <geom name="LTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                
+                                <site name="LGA_at_Pelvis_sidesite" pos="-1.74690480e-02 9.41424358e-04 -4.14452075e-03" size="0.0005" />
+                                <site name="LCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 3.86699778e-03 -8.67257693e-05" size="0.0005" />
+                                <site name="LOE_at_Pelvis_sidesite" pos="-1.57157219e-02 3.27722523e-03 -1.18206013e-05" size="0.0005" />
+                                <site name="LHip_flexors_at_pelvis_sidesite" pos="-1.13462187e-02 2.95897147e-03  1.06590625e-04" size="0.0005" />
+                                <site name="LGM_dorsal_GM_dorsal-P1" pos="-0.00121088 0.00349012  0.00315321" size="0.0005" />
+                                <site name="LGM_dorsal_GM_dorsal-P2" pos="-0.00708953 0.00265458 0.00265456" size="0.0005" />
+                                <site name="LGM_mid_GM_mid-P1" pos="-1.77324580e-03 4.72580437e-03  2.12987557e-03" size="0.0005" />
+                                <site name="LGM_mid_GM_mid-P2" pos="-6.15438951e-03 2.96727078e-03  2.13615260e-03" size="0.0005" />
+                                <site name="LGM_ventral_GM_ventral-P1" pos="-1.84602043e-03 3.76580857e-03  9.31705331e-04" size="0.0005" />
+                                <site name="LGM_ventral_GM_ventral-P2" pos="-5.59946420e-03 2.84517108e-03  1.56121821e-03" size="0.0005" />
+                                <site name="LOE_OE-P1" pos="-1.73723008e-02 2.36728226e-03 -1.36571557e-03" size="0.0005" />
+                                <site name="LOI_OI-P1" pos="-1.76571686e-02 1.27831052e-03 -2.77408018e-03" size="0.0005" />
+                                <site name="LGEM_GEM-P1" pos="-1.49022162e-02 2.75403603e-03  2.93806227e-03" size="0.0005" />
+                                <site name="LQF_QF-P1" pos="-1.75225711e-02 8.88558345e-04 -2.88577953e-03" size="0.0005" />
+                                <site name="LAM_AM-P1" pos="-1.47968810e-02 6.55230007e-04 -3.01060722e-04" size="0.0005" />
+                                <site name="LAL_AL-P1" pos="-1.43934816e-02 7.30675671e-04 -2.65326867e-04" size="0.0005" />
+                                <site name="LAB_AB-P1" pos="-1.42781798e-02 5.60075702e-04 -1.46158319e-04" size="0.0005" />
+                                <site name="LGP_GP-P1" pos="-1.70785883e-02 2.12194741e-03 -1.48252234e-03" size="0.0005" />
+                                <site name="LGA_at_Pelvis_cylinder_GP_1_sidesite" pos="-1.88779132e-02 -7.34804888e-04 -4.31926197e-03" size="0.0005" />
+                                <site name="LGA_GA-P1" pos="-1.69404757e-02 4.47613371e-04 -1.27244989e-03" size="0.0005" />
+                                <site name="LGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02 -8.20247864e-04 -2.57538241e-03" size="0.0005" />
+                                <site name="LPMA_PMA-P1" pos="-2.46678589e-03 7.30153709e-04  2.99259102e-03" size="0.0005" />
+                                <site name="LPMI_PMI-P1" pos="-4.76280248e-03 4.08819906e-04  2.37846364e-03" size="0.0005" />
+                                <site name="LILI_ILI-P1" pos="-2.57531467e-03 3.52753438e-03  4.87287796e-04" size="0.0005" />
+                                <site name="LPECT_PECT-P1" pos="-1.30256598e-02 1.12137593e-03  1.78088148e-04" size="0.0005" />
+                                <site name="LCF_CF-P1" pos="-1.58869176e-02 3.40067430e-03  2.60621564e-03" size="0.0005" />
+                                <site name="LSM_SM-P1" pos="-1.71251073e-02 3.77418026e-03  1.41702290e-03" size="0.0005" />
+                                <site name="LST_ST-P1" pos="-1.86524054e-02 3.57029160e-03  3.08650186e-04" size="0.0005" />
+                                <site name="LST_at_Pelvis_sphere_ST_1_sidesite" pos="-1.86391023e-02 3.55782360e-03  2.57138491e-05" size="0.0005" />
+                                <site name="LBFA_BFA-P1" pos="-1.62694283e-02 3.56797292e-03  2.66449710e-03" size="0.0005" />
+                                <site name="LBFP_cranial_BFP_cranial-P1" pos="-1.66702992e-02 3.72362703e-03  2.36975262e-03" size="0.0005" />
+                                <site name="LBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 3.86607058e-03  1.83094496e-03" size="0.0005" />
+                                <site name="LBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 3.79640821e-03  1.54006153e-03" size="0.0005" />
+                                <site name="LRF_RF-P1" pos="-1.08334314e-02 3.27061975e-03  1.52989635e-03" size="0.0005" />
+                                <site name="LTensorFasciaeLatae_3" pos="-0.009 0.005 0.005" size="0.0005"/>
+                                <include file= "Body/Body_Leg_r.xml"/>
+                                <include file= "Body/Body_Leg_l.xml"/>
+                                <include file= "Body/Body_Tail.xml"/>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </body>             
+</mujoco>

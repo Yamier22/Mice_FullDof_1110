@@ -1,0 +1,160 @@
+<mujoco>
+    <equality>
+        <weld name="RGlenohumeral Joint" active="true" body1="RScapula" body2="RClavicle" anchor="0.0015 -0.0065 0.0055" torquescale="1" />
+        <weld name="LGlenohumeral Joint" active="true" body1="LScapula" body2="LClavicle" anchor="0.0015 0.0065 0.0055" torquescale="1" />
+
+        <weld name="SternumRib_1L" active="true" body1="Sternum" body2="Rib_1L" torquescale="1" />
+        <weld name="SternumRib_2R" active="true" body1="Sternum" body2="Rib_2R" torquescale="1" />
+        <weld name="SternumRib_2L" active="true" body1="Sternum" body2="Rib_2L" torquescale="1" />
+        <weld name="SternumRib_3R" active="true" body1="Sternum" body2="Rib_3R" torquescale="1" />
+        <weld name="SternumRib_3L" active="true" body1="Sternum" body2="Rib_3L" torquescale="1" />
+        <weld name="SternumRib_4R" active="true" body1="Sternum" body2="Rib_4R" torquescale="1" />
+        <weld name="SternumRib_4L" active="true" body1="Sternum" body2="Rib_4L" torquescale="1" />
+        <weld name="SternumRib_5R" active="true" body1="Sternum" body2="Rib_5R" torquescale="1" />
+        <weld name="SternumRib_5L" active="true" body1="Sternum" body2="Rib_5L" torquescale="1" />
+        <weld name="SternumRib_6R" active="true" body1="Sternum" body2="Rib_6R" torquescale="1" />
+        <weld name="SternumRib_6L" active="true" body1="Sternum" body2="Rib_6L" torquescale="1" />
+        <weld name="SternumRib_7R" active="true" body1="Sternum" body2="Rib_7R" torquescale="1" />
+        <weld name="SternumRib_7L" active="true" body1="Sternum" body2="Rib_7L" torquescale="1" />
+        <weld name="SternumRib_8R" active="true" body1="Sternum" body2="Rib_8R" torquescale="1" />
+        <weld name="SternumRib_8L" active="true" body1="Sternum" body2="Rib_8L" torquescale="1" />
+        <weld name="SternumRClavicle" active="true" body1="Sternum" body2="RClavicle" torquescale="1" />
+        <weld name="SternumLClavicle" active="true" body1="Sternum" body2="LClavicle" torquescale="1" />
+    </equality>
+    <contact>
+        <exclude body1="RScapula" body2="RClavicle" />
+        <exclude body1="RHumerus" body2="RClavicle" />
+        <exclude body1="RHumerus" body2="RRadius" />
+        <exclude body1="RUlna" body2="RCarpi" />
+        <exclude body1="LScapula" body2="LClavicle" />
+        <exclude body1="LHumerus" body2="LClavicle" />
+        <exclude body1="LHumerus" body2="LRadius" />
+        <exclude body1="LUlna" body2="LCarpi" />
+
+        <exclude body1="Head" body2="C2" />
+        <exclude body1="Head" body2="C3" />
+        <exclude body1="Head" body2="C4" />
+        <exclude body1="Head" body2="C5" />
+        <exclude body1="Head" body2="C6" />
+        <exclude body1="C1" body2="C3" />
+        <exclude body1="C1" body2="C4" />
+        <exclude body1="C1" body2="C5" />
+        <exclude body1="C1" body2="C6" />
+        <exclude body1="C1" body2="C7" />
+        <exclude body1="C2" body2="C4" />
+        <exclude body1="C2" body2="C5" />
+        <exclude body1="C2" body2="C6" />
+        <exclude body1="C2" body2="C7" />
+        <exclude body1="C3" body2="C5" />
+        <exclude body1="C3" body2="C6" />
+        <exclude body1="C3" body2="C7" />
+        <exclude body1="C4" body2="C6" />
+        <exclude body1="C4" body2="C7" />
+        <exclude body1="C5" body2="C7" />
+
+        <exclude body1="T13" body2="L1"/>
+        <exclude body1="T13" body2="T12"/>
+        <exclude body1="Rib_12R" body2="T11"/>
+        <exclude body1="Rib_12L" body2="T11"/>
+        <exclude body1="Rib_11R" body2="T10"/>
+        <exclude body1="Rib_11L" body2="T10"/>
+        <exclude body1="Rib_10R" body2="T9"/>
+        <exclude body1="Rib_10L" body2="T9"/>
+        <exclude body1="Rib_9R" body2="T8"/>
+        <exclude body1="Rib_9L" body2="T8"/>
+        <exclude body1="Rib_9R" body2="Rib_8R"/>
+        <exclude body1="Rib_9L" body2="Rib_8L"/>
+
+        <exclude body1="Rib_8R" body2="T7"/>
+        <exclude body1="Rib_8L" body2="T7"/>
+        <exclude body1="Rib_8R" body2="Rib_7R"/>
+        <exclude body1="Rib_8L" body2="Rib_7L"/>
+        <exclude body1="Rib_8R" body2="Rib_6R"/>
+        <exclude body1="Rib_8L" body2="Rib_6L"/>
+        <exclude body1="Rib_8R" body2="Rib_5R"/>
+        <exclude body1="Rib_8L" body2="Rib_5L"/>
+        <exclude body1="Rib_8R" body2="Rib_4R"/>
+        <exclude body1="Rib_8L" body2="Rib_4L"/>
+        <exclude body1="Rib_8R" body2="Rib_8L"/>
+        <exclude body1="Rib_8R" body2="Rib_7L"/>
+        <exclude body1="Rib_8L" body2="Rib_7R"/>
+        <exclude body1="Rib_8R" body2="Rib_6L"/>
+        <exclude body1="Rib_8L" body2="Rib_6R"/>
+
+        <exclude body1="Rib_7R" body2="T6"/>
+        <exclude body1="Rib_7L" body2="T6"/>
+        <exclude body1="Rib_7R" body2="Rib_6R"/>
+        <exclude body1="Rib_7L" body2="Rib_6L"/>
+        <exclude body1="Rib_7R" body2="Rib_5R"/>
+        <exclude body1="Rib_7L" body2="Rib_5L"/>
+        <exclude body1="Rib_7R" body2="Rib_4R"/>
+        <exclude body1="Rib_7L" body2="Rib_4L"/>
+        <exclude body1="Rib_7R" body2="Rib_7L"/>
+        <exclude body1="Rib_7R" body2="Rib_6L"/>
+        <exclude body1="Rib_7L" body2="Rib_6R"/>
+        <exclude body1="Rib_7R" body2="Rib_5L"/>
+        <exclude body1="Rib_7L" body2="Rib_5R"/>
+        <exclude body1="Rib_7R" body2="Rib_4L"/>
+        <exclude body1="Rib_7L" body2="Rib_4R"/>
+
+        <exclude body1="Rib_6R" body2="T5"/>
+        <exclude body1="Rib_6L" body2="T5"/>
+        <exclude body1="Rib_6R" body2="Rib_5R"/>
+        <exclude body1="Rib_6L" body2="Rib_5L"/>
+        <exclude body1="Rib_6R" body2="Rib_4R"/>
+        <exclude body1="Rib_6L" body2="Rib_4L"/>
+        <exclude body1="Rib_6R" body2="Rib_3R"/>
+        <exclude body1="Rib_6L" body2="Rib_3L"/>
+        <exclude body1="Rib_6R" body2="Rib_6L"/>
+        <exclude body1="Rib_6R" body2="Rib_5L"/>
+        <exclude body1="Rib_6L" body2="Rib_5R"/>
+        <exclude body1="Rib_6R" body2="Rib_4L"/>
+        <exclude body1="Rib_6L" body2="Rib_4R"/>
+
+        <exclude body1="Rib_5R" body2="T4"/>
+        <exclude body1="Rib_5L" body2="T4"/>
+        <exclude body1="Rib_5R" body2="Rib_4R"/>
+        <exclude body1="Rib_5L" body2="Rib_4L"/>
+        <exclude body1="Rib_5R" body2="Rib_3R"/>
+        <exclude body1="Rib_5L" body2="Rib_3L"/>
+        <exclude body1="Rib_5R" body2="Rib_5L"/>
+        <exclude body1="Rib_5R" body2="Rib_4L"/>
+        <exclude body1="Rib_5L" body2="Rib_4R"/>
+
+        <exclude body1="Rib_4R" body2="T3"/>
+        <exclude body1="Rib_4L" body2="T3"/>
+        <exclude body1="Rib_4R" body2="Rib_3R"/>
+        <exclude body1="Rib_4L" body2="Rib_3L"/>
+        <exclude body1="Rib_4R" body2="Rib_4L"/>
+
+        <exclude body1="Rib_3R" body2="Rib_2R"/>
+        <exclude body1="Rib_3L" body2="Rib_2L"/>
+        <exclude body1="Rib_2R" body2="T1"/>
+        <exclude body1="Rib_2L" body2="T1"/>
+        <exclude body1="Rib_2R" body2="Rib_2L"/>
+        <exclude body1="Rib_1R" body2="Rib_1L"/>
+        <exclude body1="T1" body2="C6"/>
+
+        <exclude body1="L5" body2="Pelvis" />
+        <exclude body1="L4" body2="Pelvis" />
+
+        <exclude body1="Sternum" body2="Rib_1R"/>
+        <exclude body1="Sternum" body2="Rib_1L"/>
+        <exclude body1="Sternum" body2="Rib_2R"/>
+        <exclude body1="Sternum" body2="Rib_2L"/>
+        <exclude body1="Sternum" body2="Rib_3R"/>
+        <exclude body1="Sternum" body2="Rib_3L"/>
+        <exclude body1="Sternum" body2="Rib_4R"/>
+        <exclude body1="Sternum" body2="Rib_4L"/>
+        <exclude body1="Sternum" body2="Rib_5R"/>
+        <exclude body1="Sternum" body2="Rib_5L"/>
+        <exclude body1="Sternum" body2="Rib_6R"/>
+        <exclude body1="Sternum" body2="Rib_6L"/>
+        <exclude body1="Sternum" body2="Rib_7R"/>
+        <exclude body1="Sternum" body2="Rib_7L"/>
+        <exclude body1="Sternum" body2="Rib_8R"/>
+        <exclude body1="Sternum" body2="Rib_8L"/>
+        <exclude body1="Sternum" body2="RClavicle"/>
+        <exclude body1="Sternum" body2="LClavicle"/>    
+    </contact>
+</mujoco>

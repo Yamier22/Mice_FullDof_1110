@@ -1,0 +1,651 @@
+<mujoco>
+    <tendon>
+        <spatial name="RBicepsLongus_tendon" group="0">
+            <site site="RBicepsLongus_RBicepsLongus-P1" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsLongus_1_sidesite" />
+            <site site="RBicepsLongus_RBicepsLongus-P2" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsLongus_2_sidesite" />
+            <site site="RBicepsLongus_RBicepsLongus-P3" />
+            <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBicepsLongus_3_sidesite" />
+            <site site="RBicepsLongus_insertion" />
+        </spatial>
+        <spatial name="RBicepsBrevis_tendon" group="0">
+            <site site="RBicepsBrevis_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsBrevis_1_sidesite" />
+            <site site="RBicepsBrevis_RBiceps-P2" />
+            <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBicepsBrevis_2_sidesite" />
+            <site site="RBicepsBrevis_insertion" />
+        </spatial>
+        <spatial name="RTri_Long_tendon" group="0">
+            <site site="RTri_Long_origin" />
+            <geom geom="RForearm_Proximal_cylinder" sidesite="RForearm_Proximal_cylinder_RTri_Long_1_sidesite" />
+            <site site="RTri_Long_insertion" />
+        </spatial>
+        <spatial name="RTri_Lateral_tendon" group="0">
+            <site site="RTri_Lateral_origin" />
+            <site site="RTri_Lateral_insertion" />
+        </spatial>
+        <spatial name="RTri_Medial_tendon" group="0">
+            <site site="RTri_Medial_origin" />
+            <site site="RTri_Medial_insertion" />
+        </spatial>
+        <spatial name="RBrachialis_tendon" group="0">
+            <site site="RBrachialis_origin" />
+            <site site="RBrachialis_path_point_1" />
+            <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBrachialis_2_sidesite" />
+            <site site="RBrachialis_insertion" />
+        </spatial>
+        <spatial name="RAnconeus_tendon" group="0">
+            <site site="RAnconeus_origin" />
+            <site site="RAnconeus_insertion" />
+        </spatial>
+        <spatial name="RCoracobrachialis_tendon" group="0">
+            <site site="RCoracobrachialis_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RCoracobrachialis_1_sidesite" />
+            <site site="RCoracobrachialis_RCoracobrachialis-P2_0" />
+            <site site="RCoracobrachialis_insertion" />
+        </spatial>
+        <spatial name="RDeltoideusSpinal_tendon" group="0">
+            <site site="RDeltoideusSpinal_origin" />
+            <site site="RDeltoideusSpinal_insertion" />
+        </spatial>
+        <spatial name="RDeltoideusAcromial_tendon" group="0">
+            <site site="RDeltoideusAcromial_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RDeltoideusAcromial_1_sidesite" />
+            <site site="RDeltoideusAcromial_insertion" />
+        </spatial>
+        <spatial name="RDeltoideusClavicle_tendon" group="0">
+            <site site="RDeltoideusClavicle_origin" />
+            <site site="RDeltoideusClavicle_insertion" />
+        </spatial>
+        <spatial name="RInfraspinatus_tendon" group="0">
+            <site site="RInfraspinatus_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RInfraspinatus_1_sidesite" />
+            <site site="RInfraspinatus_insertion" />
+        </spatial>
+        <spatial name="RSupraspinatus_tendon" group="0">
+            <site site="RSupraspinatus_origin" />
+            <site site="RSupraspinatus_P1" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSupraspinatus_1_sidesite" />
+            <site site="RSupraspinatus_insertion" />
+        </spatial>
+        <spatial name="RSubscapularis_tendon" group="0">
+        <site site="RSubscapularis_origin" />
+        <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSubscapularis_1_sidesite" />
+        <site site="RSubscapularis_insertion" />
+        </spatial>
+        <spatial name="RTeresMajor_tendon" group="0">
+        <site site="RTeresMajor_origin" />
+        <site site="RTeresMajor_insertion" />
+        </spatial>
+        <spatial name="RTeresMinor_tendon" group="0">
+        <site site="RTeresMinor_origin" />
+        <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RTeresMinor_1_sidesite" />
+        <site site="RTeresMinor_insertion" />
+        </spatial>
+        <spatial name="RPronatorTeres_tendon" group="0">
+        <site site="RPronatorTeres_origin" />
+        <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RPronatorTeres_1_sidesite" />
+        <site site="RPronatorTeres_insertion" />
+        </spatial>
+        <spatial name="RFlaxorCarpiUlnar_tendon" group="0">
+        <site site="RFlaxorCarpiUlnar_origin" />
+        <geom geom="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite" />
+        <site site="RFlaxorCarpiUlnar_insertion" />
+        </spatial>
+        <spatial name="RPalmarLongus_tendon" group="0">
+        <site site="RPalmarLongus_origin" />
+        <site site="RPalmarLongus_insertion" />
+        </spatial>
+        <spatial name="RFlaxorCarpiRadialis_tendon" group="0">
+        <site site="RFlaxorCarpiRadialis_origin" />
+        <geom geom="RWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis" sidesite="RWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis_1_sidesite" />
+        <site site="RFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P2" />
+        <site site="RFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P3" />
+        <site site="RFlaxorCarpiRadialis_insertion" />
+        </spatial>
+
+        <!-- <spatial name="RFlexorDigitumProfundusHumerus_tendon" group="0">
+            <site site="RFlexorDigitumProfundusHumerus_origin" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+
+        </spatial> -->
+
+        <spatial name="RFlexorDigitumProfundusHumerus_tendon_1" group="0">
+            <site site="RFlexorDigitumProfundusHumerus_origin" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusHumerus_tendon_2" group="0">
+            <site site="RFlexorDigitumProfundusHumerus_origin" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusHumerus_tendon_3" group="0">
+            <site site="RFlexorDigitumProfundusHumerus_origin" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusHumerus_tendon_4" group="0">
+            <site site="RFlexorDigitumProfundusHumerus_origin" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+        </spatial>
+
+        <!-- <spatial name="RFlexorDigitumProfundusUlnar_tendon" group="0">
+            <site site="RFlexorDigitumProfundusUlnar_origin" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+        </spatial> -->
+
+        <spatial name="RFlexorDigitumProfundusUlnar_tendon_1" group="0">
+            <site site="RFlexorDigitumProfundusUlnar_origin" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusUlnar_tendon_2" group="0">
+            <site site="RFlexorDigitumProfundusUlnar_origin" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusUlnar_tendon_3" group="0">
+            <site site="RFlexorDigitumProfundusUlnar_origin" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusUlnar_tendon_4" group="0">
+            <site site="RFlexorDigitumProfundusUlnar_origin" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+        </spatial>
+
+
+        <!-- <spatial name="RFlexorDigitumProfundusRadial_tendon" group="0">
+            <site site="RFlexorDigitumProfundusRadial_origin" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+        </spatial> -->
+
+        <spatial name="RFlexorDigitumProfundusRadial_tendon_1" group="0">
+            <site site="RFlexorDigitumProfundusRadial_origin" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-2"/>
+                <site site="RFlexorDigitum-2-1"/>
+                <site site="RFlexorDigitum-2-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusRadial_tendon_2" group="0">
+            <site site="RFlexorDigitumProfundusRadial_origin" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-3"/>
+                <site site="RFlexorDigitum-3-1"/>
+                <site site="RFlexorDigitum-3-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusRadial_tendon_3" group="0">
+            <site site="RFlexorDigitumProfundusRadial_origin" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-4"/>
+                <site site="RFlexorDigitum-4-1"/>
+                <site site="RFlexorDigitum-4-3"/>
+        </spatial>
+        <spatial name="RFlexorDigitumProfundusRadial_tendon_4" group="0">
+            <site site="RFlexorDigitumProfundusRadial_origin" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="RFlexorDigitum-5"/>
+                <site site="RFlexorDigitum-5-1"/>
+                <site site="RFlexorDigitum-5-3"/>
+        </spatial>
+
+        <!-- <spatial name="RFlexorDigitumsSuperficial_tendon" group="0">
+            <site site="RFlexorDigitumsSuperficial_origin" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <pulley divisor="4"/>
+                    <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-2"/>
+                    <site site="RFlexorDigitum-2-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-3"/>
+                    <site site="RFlexorDigitum-3-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-4"/>
+                    <site site="RFlexorDigitum-4-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-5"/>
+                    <site site="RFlexorDigitum-5-2"/>
+
+        </spatial> -->
+
+        <spatial name="RFlexorDigitumsSuperficial_tendon_1" group="0">
+            <site site="RFlexorDigitumsSuperficial_origin" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-2"/>
+                    <site site="RFlexorDigitum-2-2"/>
+        </spatial>
+        <spatial name="RFlexorDigitumsSuperficial_tendon_2" group="0">
+            <site site="RFlexorDigitumsSuperficial_origin" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-3"/>
+                    <site site="RFlexorDigitum-3-2"/>
+        </spatial>
+        <spatial name="RFlexorDigitumsSuperficial_tendon_3" group="0">
+            <site site="RFlexorDigitumsSuperficial_origin" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-4"/>
+                    <site site="RFlexorDigitum-4-2"/>
+        </spatial>
+        <spatial name="RFlexorDigitumsSuperficial_tendon_4" group="0">
+            <site site="RFlexorDigitumsSuperficial_origin" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="RFlexorDigitum-5"/>
+                    <site site="RFlexorDigitum-5-2"/>
+        </spatial>
+
+        <spatial name="RExtensorCarpiRadialisLongus_tendon" group="0">
+        <site site="RExtensorCarpiRadialisLongus_origin" />
+        <site site="RExtensorCarpiRadialisLongus_insertion" />
+        <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" />
+        <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" />
+        </spatial>
+
+        <spatial name="RExtensorCarpiRadialisBrevis_tendon" group="0">
+        <site site="RExtensorCarpiRadialisBrevis_origin" />
+        <site site="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2" />
+        <site site="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2_0" />
+        <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" />
+        <site site="RExtensorCarpiRadialisBrevis_insertion" />
+        </spatial>
+
+        <!-- <spatial name="RExtensorDigitorumCommunis_tendon" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-2"/>
+                <site site="RExtensorDigitum-2-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-3"/>
+            
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-3"/>
+                <site site="RExtensorDigitum-3-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+        
+        </spatial> -->
+
+        <spatial name="RExtensorDigitorumCommunis_tendon_1" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-2"/>
+                <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_2" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-2"/>
+                <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-3"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_3" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-3"/>
+                <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_4" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-3"/>
+                <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-3"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_5" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_6" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_7" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumCommunis_tendon_8" group="0">
+            <site site="RExtensorDigitorumCommunis_origin" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+        </spatial>
+
+        <!-- <spatial name="RExtensorDigitorumLateralis_tendon" group="0">
+            <site site="RExtensorDigitorumLateralis_origin" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="RExtensorDigitorumLateralis_insertion" />
+            <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <pulley divisor="2"/>
+                <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+            
+                <pulley divisor="2"/>
+                <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+
+        </spatial> -->
+
+        <spatial name="RExtensorDigitorumLateralis_tendon_1" group="0">
+            <site site="RExtensorDigitorumLateralis_origin" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="RExtensorDigitorumLateralis_insertion" />
+            <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumLateralis_tendon_2" group="0">
+            <site site="RExtensorDigitorumLateralis_origin" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="RExtensorDigitorumLateralis_insertion" />
+            <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumLateralis_tendon_3" group="0">
+            <site site="RExtensorDigitorumLateralis_origin" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="RExtensorDigitorumLateralis_insertion" />
+            <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />        
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+        </spatial>
+        <spatial name="RExtensorDigitorumLateralis_tendon_4" group="0">
+            <site site="RExtensorDigitorumLateralis_origin" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="RExtensorDigitorumLateralis_insertion" />
+            <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />        
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+        </spatial>
+
+        <spatial name="RExtensorCarpiUlnar_tendon" group="0">
+        <site site="RExtensorCarpiUlnar_origin" />
+        <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" />
+        <site site="RExtensorCarpiUlnar_RExtensorCarpiUlnar-P2" />
+        <site site="RExtensorCarpiUlnar_RExtensorCarpiUlnar-P2_0" />
+        <site site="RExtensorCarpiUlnar_insertion" />
+        </spatial>
+        <spatial name="RSupinator_tendon" group="0">
+        <site site="RSupinator_origin" />
+        <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RSupinator_1_sidesite" />
+        <site site="RSupinator_RSupinator-P2" />
+        <site site="RSupinator_insertion" />
+        </spatial>
+        <spatial name="RAbductorPollicisLongus_tendon" group="0">
+            <site site="RAbductorPollicisLongus_origin" />
+            <geom geom="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P2" />
+            <site site="RAbductorPollicisLongus_insertion" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" />
+            <site site="RAbductorPollicisLongus-1-1"/>
+            <site site="RAbductorPollicisLongus-1-3"/>
+        </spatial>
+        <spatial name="RPronatorQuadratus_tendon" group="0">
+        <site site="RPronatorQuadratus_origin" />
+        <site site="RPronatorQuadratus_insertion" />
+        </spatial>
+    </tendon>
+</mujoco>

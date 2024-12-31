@@ -1,0 +1,287 @@
+<mujoco> 
+    <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
+        <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-0.5 0.5" group="3" />
+        <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="3" />
+        <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.5235987755982988" group="3" />
+
+        <geom name="RFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" density="1908" />
+
+        <geom name="RQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 -0.0002 -0.0137" euler="1.5707963267948966 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RTFL_at_Quads_ellipsoid" size="0.0013" pos="-0.0004 -0.0014 -0.0078" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RAB_at_Quads_ellipsoid" size="0.001" pos="-0.0008 -0.0001 -0.007" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RQF_at_Femur_ellipsoid" size="0.0009" pos="-0.0011 -0.0014 -0.0054" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 0.0002 -0.0016" euler="0.0 0.7853981633974483 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 -0.0017 -0.0053" euler="-0.08726646259971647 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RCF_BFA_at_Femur_ellipsoid" size="0.001" pos="-0.001 -0.001 -0.0008" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="ROI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 -0.0005 -0.0014" euler="1.3962634015954636 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RPECT_at_Quads_ellipsoid" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RCF_BFA_at_Thigh_ellipsoid" size="0.0005" pos="-0.0019 -0.0015 -0.0055" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RAB_at_Quads_ellipsoid_AB" size="0.000754311" pos="-0.000956404 -0.000163831 -0.00703726" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RHip_Flexors_at_Quads_ellipsoid_ILI" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RPECT_at_Quads_ellipsoid_PECT" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+        <geom name="RCF_BFA_at_Thigh_ellipsoid_BFA" size="0.000471177" pos="-0.00198958 -0.00146195 -0.00542555" group="2" rgba="0.19 0.83 0.78 0.8" contype="0" conaffinity="0"/>
+
+        <site name="RQuads_at_Femur_sidesite" pos="0.0006435 -0.0001653 -0.01497" size="0.0005" />
+        <site name="RHip_Flexors_at_Quads_sidesite" pos="-2.985e-05 0.0003949 -0.002576" size="0.0005" />
+        <site name="RQF_at_Femur_sidesite" pos="-0.002966 -0.00172 -0.005554" size="0.0005" />
+        <site name="RCF_BFA_at_OE_sidesite" pos="-0.002917 -0.00128 -0.001494" size="0.0005" />
+        <site name="RQF_at_Thigh_sidesite" pos="-0.001598 -0.0001132 -0.005449" size="0.0005" />
+        <site name="RCF_BFA_at_Femur_sidesite" pos="-0.002864 -0.001612 -0.0004102" size="0.0005" />
+        <site name="ROI_at_Femur_sidesite" pos="-0.002822 -6.888e-05 -0.0004616" size="0.0005" />
+        <site name="RCF_BFA_at_Thigh_sidesite" pos="-0.003396 -0.00157 -0.00558" size="0.0005" />
+        <site name="RGM_dorsal_GM_dorsal-P3" pos="-0.00036 -0.00247 0.00024" size="0.0005" />
+        <site name="RGM_dorsal_GM_dorsal-P4" pos="-0.00123 -0.00211 -0.00146" size="0.0005" />
+        <site name="RGM_mid_GM_mid-P3" pos="-0.00076 -0.00256 0.00016" size="0.0005" />
+        <site name="RGM_mid_GM_mid-P4" pos="-0.00122 -0.0021 -0.00166" size="0.0005" />
+        <site name="RGM_ventral_GM_ventral-P3" pos="-0.00064 -0.00257 -4e-05" size="0.0005" />
+        <site name="RGM_ventral_GM_ventral-P4" pos="-0.00104 -0.00209 -0.00185" size="0.0005" />
+        <site name="ROE_OE-P2" pos="-0.00196 -1e-05 -0.00104" size="0.0005" />
+        <site name="ROI_OI-P2" pos="-0.00085 -0.00026 2e-05" size="0.0005" />
+        <site name="ROI_at_Femur_cylinder_OI_1_sidesite" pos="-0.00202712 0.000823813 -0.00136503" size="0.0005" />
+        <site name="RGEM_GEM-P2" pos="-0.00069 -0.00069 0.00041" size="0.0005" />
+        <site name="RQF_QF-P2" pos="-0.00189 -0.00256 -0.00439" size="0.0005" />
+        <site name="RQF_at_Thigh_cylinder_QF_1_sidesite" pos="-0.0018184 -0.0013802 -0.00755496" size="0.0005" />
+        <site name="RAM_AM-P2" pos="-0.00167 -0.00176 -0.0124" size="0.0005" />
+        <site name="RAL_AL-P2" pos="-0.00149 0.00117 -0.01349" size="0.0005" />
+        <site name="RAB_AB-P2" pos="-0.00083 7e-05 -0.01045" size="0.0005" />
+        <site name="RAB_at_Quads_ellipsoid_AB_1_sidesite" pos="-0.00113733 0.000197725 -0.00621457" size="0.0005" />
+        <site name="RPMA_PMA-P2" pos="-0.00121 -0.00028 -0.00221" size="0.0005" />
+        <site name="RPMI_PMI-P2" pos="-0.00124 -0.00022 -0.00204" size="0.0005" />
+        <site name="RILI_ILI-P2" pos="-0.00114 -0.00037 -0.00234" size="0.0005" />
+        <site name="RHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" pos="0.0001189 -0.0001978 -0.002348" size="0.0005" />
+        <site name="RPECT_PECT-P2" pos="-0.00091 -0.00062 -0.00561" size="0.0005" />
+        <site name="RPECT_at_Quads_ellipsoid_PECT_1_sidesite" pos="-0.0007811 -0.0001111 -0.004763" size="0.0005" />
+        <site name="RCF_CF-P2" pos="-0.00234 -0.00066 -0.00792" size="0.0005" />
+        <site name="RCF_CF-P3" pos="-0.00194 0.00029 -0.0108" size="0.0005" />
+        <site name="RCF_CF-P4" pos="-0.00145 0.001 -0.01321" size="0.0005" />
+        <site name="RBFA_BFA-P2" pos="-0.00182 -0.00187 -0.01341" size="0.0005" />
+        <site name="RBFA_BFA-P3" pos="-0.00193 -0.00149 -0.01416" size="0.0005" />
+        <site name="RCF_BFA_at_Thigh_ellipsoid_BFA_1_sidesite" pos="-0.00225935 -0.00152944 -0.00593554" size="0.0005" />
+        <site name="RVM_VM-P1" pos="-0.00029 -0.00119 -0.00053" size="0.0005" />
+        <site name="RVL_VL-P1" pos="-0.00038 -0.00204 -0.00062" size="0.0005" />
+        <site name="RVI_VI-P1" pos="-0.00036 -0.00146 -0.00149" size="0.0005" />
+        <site name="RPOP_POP-P1" pos="-0.00198 -0.00122 -0.01312" size="0.0005" />
+        <site name="RMG_MG-P1" pos="-0.00162 0.00078 -0.01279" size="0.0005" />
+        <site name="RLG_LG-P1" pos="-0.00188 -0.00115 -0.01276" size="0.0005" />
+        <site name="RPLANT_PLANT-P1" pos="-0.0017 -0.00022 -0.01247" size="0.0005" />
+        
+        <site name="RTensorFasciaeLatae_2" pos="-0.00125 -0.0025 -0.005" size="0.0005" rgba="1 0 0 1" group="4"/>
+
+        <body name="RLeg" pos="-0.001 0 -0.0135" gravcomp="0">
+            <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.5" group="3" />
+
+            <geom name="R_Leg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" density="1908"/>
+            <geom name="R_Leg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" density="1908"/>
+
+            <geom name="RPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="4.656346458103152 0.05183627878423159 -0.011344640137963142" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+            <geom name="RHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 -0.0002 -0.0064" euler="1.7003870237554755 -0.023387411976724018 3.070994085346623" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+            <geom name="RAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="4.566985600401042 0.08307767239493008 0.07051130178057091" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+            <geom name="RPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="-4.681845718474789 -0.16250760665319203 -0.15589280878813352" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+            <geom name="RBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 0.0005 -0.0057" euler="-1.487893187325166 0.1920036710118962 -0.18709929581379214" group="2" rgba="0.19 0.83 0.78 0.8" contype="0" conaffinity="0"/>
+            
+            <site name="RPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 -1.022e-04 -3.013e-03" size="0.0005" />
+            <site name="RAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 -1.658e-04 -1.795e-02" size="0.0005" />
+            <site name="RPOP_at_Tibia_sidesite" pos="-2.673e-03  3.100e-04 -1.789e-03" size="0.0005" />
+            <site name="RBFPC_at_Leg_sidesite" pos="-8.802e-04 -1.622e-03 -6.102e-03" size="0.0005" />
+            <site name="RGP_GP-P2" pos="1.100e-04  1.790e-03 -4.720e-03" size="0.0005" />
+            <site name="RGA_GA-P2" pos="1.900e-04  1.730e-03 -4.500e-03" size="0.0005" />
+            <site name="RSM_SM-P2" pos="-9.000e-05  1.650e-03 -4.050e-03" size="0.0005" />
+            <site name="RST_ST-P2" pos="1.500e-04  1.720e-03 -6.070e-03" size="0.0005" />
+            <site name="RBFP_cranial_BFP_cranial-P2" pos="-1.040e-03 -1.200e-03 -1.570e-03" size="0.0005" />
+            <site name="RBFP_mid_BFP_mid-P2" pos="-1.870e-03 -1.420e-03 -2.820e-03" size="0.0005" />
+            <site name="RBFP_caudal_BFP_caudal-P2" pos="-2.700e-04 -1.330e-03 -5.500e-03" size="0.0005" />
+            <site name="RRF_RF-P2" pos="1.460e-03 -1.600e-04  7.200e-04" size="0.0005" />
+            <site name="RVM_VM-P2" pos="1.280e-03  2.000e-05  7.600e-04" size="0.0005" />
+            <site name="RVL_VL-P2" pos="1.280e-03 -4.000e-04  7.000e-04" size="0.0005" />
+            <site name="RVI_VI-P2" pos="1.190e-03 -1.500e-04  7.300e-04" size="0.0005" />
+            <site name="RPOP_POP-P2" pos="-8.500e-04  1.100e-03 -3.040e-03" size="0.0005" />
+            <site name="RTA_TA-P1" pos="7.100e-04  5.000e-05 -2.500e-03" size="0.0005" />
+            <site name="RTA_TA-P2" pos="1.570e-03  7.600e-04 -7.610e-03" size="0.0005" />
+            <site name="RTA_TA-P3" pos="2.900e-04  4.200e-04 -1.152e-02" size="0.0005" />
+            <site name="RTA_TA-P4" pos="-4.100e-04  8.200e-04 -1.582e-02" size="0.0005" />
+            <site name="RTA_TA-P5" pos="-4.300e-04  9.800e-04 -1.771e-02" size="0.0005" />
+            <site name="REDL_EDL-P1" pos="-5.300e-04 -1.600e-03 -2.950e-03" size="0.0005" />
+            <site name="REDL_EDL-P2" pos="-1.220e-03 -4.700e-04 -1.622e-02" size="0.0005" />
+            <site name="REDL_EDL-P3" pos="-8.500e-04 -2.600e-04 -1.821e-02" size="0.0005" />
+            <site name="REHL_EHL-P1" pos="4.500e-04  4.200e-04 -4.180e-03" size="0.0005" />
+            <site name="REHL_EHL-P2" pos="-2.600e-04  7.000e-05 -1.301e-02" size="0.0005" />
+            <site name="REHL_EHL-P3" pos="-8.000e-04  2.800e-04 -1.652e-02" size="0.0005" />
+            <site name="REHL_EHL-P4" pos="-6.700e-04  3.100e-04 -1.770e-02" size="0.0005" />
+            <site name="RPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" pos="-3.088e-03 -1.034e-04 -2.711e-03" size="0.0005" />
+            <site name="RPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" pos="-1.973e-03 -7.922e-04 -2.758e-03" size="0.0005" />
+            <site name="RSOL_SOL-P1" pos="-1.990e-03  3.000e-04 -8.130e-03" size="0.0005" />
+            <site name="RPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" pos="-2.839e-03 -8.492e-04 -2.397e-03" size="0.0005" />
+            <site name="RFDL_FDL-P1" pos="-1.600e-03  2.500e-04 -1.950e-03" size="0.0005" />
+            <site name="RFDL_FDL-P2" pos="-1.770e-03  1.150e-03 -1.914e-02" size="0.0005" />
+            <site name="RTP_TP-P1" pos="-1.490e-03  6.900e-04 -2.130e-03" size="0.0005" />
+            <site name="RTP_TP-P2" pos="-5.900e-04  3.200e-04 -3.490e-03" size="0.0005" />
+            <site name="RTP_TP-P3" pos="-1.690e-03  1.220e-03 -1.905e-02" size="0.0005" />
+            <site name="RPL_PL-P1" pos="-1.480e-03 -1.610e-03 -3.460e-03" size="0.0005" />
+            <site name="RPL_PL-P2" pos="-1.890e-03 -9.700e-04 -4.760e-03" size="0.0005" />
+            <site name="RPL_PL-P3" pos="-1.250e-03 -3.600e-04 -1.624e-02" size="0.0005" />
+            <site name="RPT_PT-P1" pos="-1.930e-03 -7.400e-04 -5.020e-03" size="0.0005" />
+            <site name="RPT_PT-P2" pos="-1.390e-03 -2.100e-04 -1.627e-02" size="0.0005" />
+            <site name="RPB_PB-P1" pos="-1.770e-03  1.000e-05 -8.790e-03" size="0.0005" />
+            <site name="RPDQA_PDQA-P1" pos="-2.030e-03 -6.000e-04 -5.410e-03" size="0.0005" />
+            <site name="RPDQA_PDQA-P2" pos="-1.230e-03  7.000e-05 -1.182e-02" size="0.0005" />
+            <site name="RPDQI_PDQI-P1" pos="-2.090e-03 -2.200e-04 -7.340e-03" size="0.0005" />
+            
+            <site name="RTensorFasciaeLatae_1" pos="0 -0.00125 -0.002" size="0.0005" rgba="1 0 0 1" group="4"/>
+
+            <body name="RPedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
+                <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-0.3490658503988659 0.3490658503988659" group="3" />
+                
+                <geom name="RTarsalMetatarsal" pos="0 -0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTarsalMetatarsal" group="0" density="1908"/>
+                <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                
+                <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03 -0.001" size="0.0005" />
+                <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  -0.002" size="0.0005"/>
+                <site name="REDL_EDL-P4" pos="0.00134 -0.00025 -0.001" size="0.0005" />
+                <site name="REDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" />
+                <site name="REDL_EDL-P6" pos="0.01 -0.001 -0.00125" size="0.0005"/>
+                <site name="REDL_EDL-P7" pos="0.01 -0.002 -0.0018" size="0.0005" />
+                <site name="REDL_EDL-P8" pos="0.0075 -0.00275 -0.0025" size="0.0005" />
+                <site name="REHL_EHL-P5" pos="0.00113 0.0003 -0.0015" size="0.0005" />
+                <site name="REHL_EHL-P6" pos="0.00725  0.00075 -0.003" size="0.0005" />
+                <site name="RMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005" />
+                <site name="RLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005" />
+                <site name="RSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005" />
+                <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" />                                                    
+                <site name="RFDL_FDL-P3" pos="0.00075 -0.0005 -0.0025" size="0.0005" />
+                <site name="RFDL_FDL-P4" pos="0.00725  0.00075 -0.004" size="0.0005" />
+                <site name="RFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" />
+                <site name="RFDL_FDL-P6" pos="0.01 -0.001 -0.00225" size="0.0005" />
+                <site name="RFDL_FDL-P7" pos="0.01 -0.002 -0.0028" size="0.0005" />
+                <site name="RFDL_FDL-P8" pos="0.0075 -0.00275 -0.0035" size="0.0005" />
+                <site name="RTP_TP-P4" pos="0.00065  0.0005 -0.00175" size="0.0005" />
+                <site name="RPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005" />
+                <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" /> 
+                <site name="RPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005" />
+                <site name="RPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005" />
+                <site name="RPB_PB-P2" pos="-7.00000000e-05 -0.001  0.00025" size="0.0005" />
+                <site name="RPB_PB-P3" pos="0.0015 -0.002 -0.002" size="0.0005" />       
+                <site name="RPDQA_PDQA-P3" pos="0.00017 -0.00075  0.00025" size="0.0005" />
+                <site name="RPDQA_PDQA-P4" pos="0.00323 -0.0015 -0.0015" size="0.0005" />
+                <site name="RPDQA_PDQA-P5" pos="0.0095 -0.00225 -0.002" size="0.0005" />
+                <site name="RPDQI_PDQI-P2" pos="0.00067 -0.00076 -0.00005" size="0.0005" />
+                <site name="RPDQI_PDQI-P3" pos="0.003 -0.002 -0.002" size="0.0005" />
+                <site name="RPDQI_PDQI-P4" pos="0.0075 -0.003 -0.0025" size="0.0005" />
+                
+                <body name="RPhalange1_1" pos="0.00725 0.0007 -0.00325" gravcomp="0">
+                    <geom name="RPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_1" density="1908" group="0"/>
+                    <joint name="RPhalange1_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
+                    <joint name="RPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 1.57" group="3" />
+                    
+                    <body name="RPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
+                        <geom name="RPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_3" density="1908" group="0"/>
+                        <joint name="RPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                        <site name="REHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" />
+                        <site name="RFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" />
+                    </body>
+                </body>
+
+                <body name="RPhalange2_1" pos="0.0094 -0.00 -0.0025" gravcomp="0">
+                    <geom name="RPhalange2_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_1" density="1908" group="0"/>
+                    <joint name="RPhalange2_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
+                    <joint name="RPhalange2_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 1.57" group="3" />
+
+                    <body name="RPhalange2_2" pos="0.00275 0 0" gravcomp="0">
+                        <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="0"/>
+                        <joint name="RPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                        
+                        <site name="REDL_EDL-P9" pos="0 0 0.0005" size="0.0005" />
+                        <site name="REDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" />
+                        <site name="RFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" />
+                        <site name="RFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" />
+
+                        <body name="RPhalange2_3" pos="0.0017 0 0" gravcomp="0">
+                            <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="0"/>
+                            <joint name="RPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                            <site name="REDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" />
+                            <site name="RFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" />
+                        </body>
+                    </body>
+                </body>
+
+                <body name="RPhalange3_1" pos="0.01 -0.001 -0.0018" gravcomp="0">
+                    <geom name="RPhalange3_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_1" density="1908" group="0"/>
+                    <joint name="RPhalange3_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
+                    <joint name="RPhalange3_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 1.57" group="3" />
+
+                    <body name="RPhalange3_2" pos="0.0031 0 0" gravcomp="0">
+                        <geom name="RPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_2" density="1908" group="0"/>
+                        <joint name="RPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                        
+                        <site name="REDL_EDL-P11" pos="0 0 0.0005" size="0.0005" />
+                        <site name="REDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" />
+                        <site name="RFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" />
+                        <site name="RFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" />
+
+                        <body name="RPhalange3_3" pos="0.0017 0 0" gravcomp="0">
+                            <geom name="RPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_3" density="1908" group="0"/>
+                            <joint name="RPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                            <site name="REDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                            <site name="RFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" />
+                        </body>
+                    </body>
+                </body>
+
+                <body name="RPhalange4_1" pos="0.0098 -0.00175 -0.0025" gravcomp="0">
+                    <geom name="RPhalange4_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_1" density="1908" group="0"/>
+                    <joint name="RPhalange4_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
+                    <joint name="RPhalange4_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 1.57" group="3" />
+
+                    <body name="RPhalange4_2" pos="0.003 0 -0.0002" gravcomp="0">
+                        <geom name="RPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_2" density="1908" group="0"/>
+                        <joint name="RPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                        
+                        <site name="REDL_EDL-P13" pos="0 0 0.0005" size="0.0005" />
+                        <site name="REDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" />
+                        <site name="RFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" />
+                        <site name="RFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" />
+                        <site name="RPDQA_PDQA-P6" pos="0 -0.00025 0.0005" size="0.0005" />
+                        <site name="RPDQA_PDQA-P7" pos="0.001 -0.00025 0.00025" size="0.0005" />
+                        
+                        <body name="RPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
+                            <geom name="RPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_3" density="1908" group="0"/>
+                            <joint name="RPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                            <site name="REDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                            <site name="RFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" />
+                            <site name="RPDQA_PDQA-P8" pos="0.00025 -0.00025 0.0005" size="0.0005" />
+                        </body>
+                    </body>
+                </body>
+
+                <body name="RPhalange5_1" pos="0.00745 -0.0025 -0.003" gravcomp="0">
+                    <geom name="RPhalange5_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_1" density="1908" group="0"/>
+                    <joint name="RPhalange5_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
+                    <joint name="RPhalange5_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 1.57" group="3" />
+
+                    <body name="RPhalange5_2" pos="0.0025 0 0" gravcomp="0">
+                        <geom name="RPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_2" density="1908" group="0"/>
+                        <joint name="RPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                        
+                        <site name="REDL_EDL-P15" pos="0 0 0.0005" size="0.0005" />
+                        <site name="REDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" />
+                        <site name="RFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" />
+                        <site name="RFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" />
+                        <site name="RPDQI_PDQI-P5" pos="0 -0.00025 0.0005" size="0.0005" />
+                        <site name="RPDQI_PDQI-P6" pos="0.001 -0.00025 0.00025" size="0.0005" />
+
+                        <body name="RPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
+                            <geom name="RPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_3" density="1908" group="0"/>
+                            <joint name="RPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                            <site name="REDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                            <site name="RFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" />
+                            <site name="RPDQI_PDQI-P7" pos="0.00025 -0.00025 0.0005" size="0.0005" />
+                        </body>
+                    </body>
+                </body>
+
+            </body>
+        </body>
+    </body>
+</mujoco>

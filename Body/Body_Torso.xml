@@ -1,0 +1,564 @@
+<mujoco>
+
+    <body name="T12" pos="0.0025 0 0" gravcomp="0">
+        <geom name="T12" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T12" density="1908"/>
+
+        <joint name="T13_T12_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+        <joint name="T13_T12_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+        <joint name="T13_T12_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+
+        <site name="T12_SpinousProcess" pos="0.00025 0 0.00275" size="0.0005" rgba="1 1 0 1" group="4"/>
+        <site name="T12_RTransverseProcess" pos="0 -0.00175 0.001" rgba="1 1 0 1" size="0.0005" group="4"/>
+        <site name="T12_LTransverseProcess" pos="0 0.00175 0.001" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+        <site name="RLatissimusDorsi_4_2" pos="0.002 -0.005 0.001" size="0.0005" group="5" rgba="1 0 0 1"/>
+        <site name="LLatissimusDorsi_4_2" pos="0.002 0.005 0.001" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+        <body name="Rib_12R" pos="0.002 -0.0015 0" gravcomp="0">
+            <geom name="Rib_12R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12R" density="1908"/>
+            <joint name="Rib_12R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+            <joint name="Rib_12R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+            
+            <site name="T12_RRibAngle" pos="-0.00200 -0.00275 0.00060" rgba="1 1 0 1" size="0.0005" group="4"/>
+            <site name="Rib12Rinter" pos="-0.001650 -0.002388 0.000989" size="0.0005" rgba="1 0 0 1" group="5"/>                
+        </body>
+
+        <body name="Rib_12L" pos="0.002 0.0015 0" gravcomp="0">
+            <geom name="Rib_12L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12L" density="1908"/>
+            <joint name="Rib_12L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+            <joint name="Rib_12L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                
+            <site name="T12_LRibAngle" pos="-0.00200 0.00275 0.00060" rgba="1 1 0 1" size="0.0005" group="4"/>
+            <site name="Rib12Linter" pos="-0.001650 0.002388 0.000989" size="0.0005" rgba="1 0 0 1" group="5"/>                
+        </body>
+
+        <body name="T11" pos="0.002 0 -0.0002" gravcomp="0">
+            <geom name="T11" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T11" density="1908"/>
+            <joint name="T12_T11_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+            <joint name="T12_T11_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+            <joint name="T12_T11_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+            
+            <site name="T11_SpinousProcess" pos="0.00025 0 0.00270" rgba="1 1 0 1" size="0.0005" group="4"/>
+            <site name="T11_RTransverseProcess" pos="0.0005 -0.00175 0.0007" rgba="1 1 0 1" size="0.0005" group="4"/>
+            <site name="T11_LTransverseProcess" pos="0.0005 0.00175 0.0007" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+            <site name="RLatissimusDorsi_4_1" pos="0.0015 -0.005 0.00125" size="0.0005" group="5" rgba="1 0 0 1"/>
+            <site name="LLatissimusDorsi_4_1" pos="0.0015 0.005 0.00125" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+            <body name="Rib_11R" pos="0.002 -0.0015 0" gravcomp="0">
+                <geom name="Rib_11R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11R" density="1908"/>
+                <joint name="Rib_11R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                <joint name="Rib_11R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                
+                <site name="T11_RRibAngle" pos="-0.00275 -0.00375 0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
+                <site name="Rib11Rinter" pos="-0.002271 -0.003099 0.001192" size="0.0005" group="5" rgba="1 0 0 1" />                    
+            </body>
+
+            <body name="Rib_11L" pos="0.002 0.0015 0" gravcomp="0">
+                <geom name="Rib_11L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11L" density="1908"/>
+                <joint name="Rib_11L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                <joint name="Rib_11L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                
+                <site name="T11_LRibAngle" pos="-0.00275 0.00375 0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
+                <site name="Rib11Linter" pos="-0.002271 0.003099 0.001192" size="0.0005" group="5" rgba="1 0 0 1" />                    
+            </body>
+
+            <body name="T10" pos="0.0017 0 -0.0003" gravcomp="0">
+                <geom name="T10" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T10" density="1908"/>
+                <joint name="T11_T10_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                <joint name="T11_T10_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                <joint name="T11_T10_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                
+                <site name="T10_SpinousProcess" pos="0.00055 0 0.00225" rgba="1 1 0 1" size="0.0005" group="4"/>
+                <site name="T10_RTransverseProcess" pos="0.0003 -0.00175 0.0005" rgba="1 1 0 1" size="0.0005" group="4"/>
+                <site name="T10_LTransverseProcess" pos="0.0003 0.00175 0.0005" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                <body name="Rib_10R" pos="0.002 -0.0015 0" gravcomp="0">
+                    <geom name="Rib_10R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10R" density="1908"/>
+                    <joint name="Rib_10R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                    <joint name="Rib_10R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                    
+                    <site name="T10_RRibAngle" pos="-0.00245 -0.00375 0.00010" rgba="1 1 0 1" size="0.0005" group="4"/>
+                    <site name="Rib10Rinter" pos="-0.001711 -0.002655 0.001005" size="0.0005" group="5" rgba="1 0 0 1" />                        
+                </body>
+
+                <body name="Rib_10L" pos="0.002 0.0015 0" gravcomp="0">
+                    <geom name="Rib_10L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10L" density="1908"/>
+                    <joint name="Rib_10L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                    <joint name="Rib_10L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                    
+                    <site name="T10_LRibAngle" pos="-0.00245 0.00375 0.00010" rgba="1 1 0 1" size="0.0005" group="4"/>
+                    <site name="Rib10Linter" pos="-0.001711 0.002655 0.001005" size="0.0005" group="5" rgba="1 0 0 1" />                        
+                </body>
+
+                <body name="T9" pos="0.0016 0 -0.001" gravcomp="0">
+                    <geom name="T9" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T9" density="1908"/>
+                    <joint name="T10_T9_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                    <joint name="T10_T9_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                    <joint name="T10_T9_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                    
+                    <site name="T9_SpinousProcess" pos="0.00045 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
+                    <site name="T9_RTransverseProcess" pos="0.0002 -0.00175 0.001" rgba="1 1 0 1" size="0.0005" group="4"/>
+                    <site name="T9_LTransverseProcess" pos="0.0002 0.00175 0.001" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                    <body name="Rib_9R" pos="0.002 -0.0015 -0.0005" gravcomp="0">
+                        <geom name="Rib_9R" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9R" density="1908"/>
+                        <joint name="Rib_9R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                        <joint name="Rib_9R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+
+                        <site name="T9_RRibAngle" pos="-0.00205 -0.00350 0.00130" rgba="1 1 0 1" size="0.0005" group="4"/>
+                        <site name="Rib9Rinter" pos="-0.001946 -0.003228 0.002026" size="0.0005" group="5" rgba="1 0 0 1" />                            
+                    </body>
+
+                    <body name="Rib_9L" pos="0.002 0.0015 -0.0005" gravcomp="0">
+                        <geom name="Rib_9L" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9L" density="1908"/>
+                        <joint name="Rib_9L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                        <joint name="Rib_9L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                        
+                        <site name="T9_LRibAngle" pos="-0.00205 0.00350 0.00130" rgba="1 1 0 1" size="0.0005" group="4"/>
+                        <site name="Rib9Linter" pos="-0.001946 0.003228 0.002026" size="0.0005" group="5" rgba="1 0 0 1" />                            
+                    </body>
+
+                    <body name="T8" pos="0.00125 0 -0.001" gravcomp="0">
+                        <geom name="T8" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T8" density="1908"/>
+                        <joint name="T9_T8_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                        <joint name="T9_T8_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                        <joint name="T9_T8_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                        
+                        <site name="T8_SpinousProcess" pos="0.00095 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
+                        <site name="T8_RTransverseProcess" pos="0.00070 -0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                        <site name="T8_LTransverseProcess" pos="0.00070 0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                        <body name="Rib_8R" pos="0.002 -0.0015 0.0" gravcomp="0">
+                            <geom name="Rib_8R" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8R" density="1908"/>
+                            <joint name="Rib_8R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                            <joint name="Rib_8R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                            
+                            <site name="T8_RRibAngle" pos="-0.00155 -0.00325 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                            <site name="Rib8Rinter" pos="-0.001839 -0.003360 0.001153" size="0.0005" group="5" rgba="1 0 0 1" />                                
+                        
+                        </body>
+
+                        <body name="Rib_8L" pos="0.002 0.0015 0.0" gravcomp="0">
+                            <geom name="Rib_8L" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8L" density="1908"/>
+                            <joint name="Rib_8L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                            <joint name="Rib_8L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                            
+                            <site name="T8_LRibAngle" pos="-0.00155 0.00325 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                            <site name="Rib8Linter" pos="-0.001839 0.003360 0.001153" size="0.0005" group="5" rgba="1 0 0 1" />                                
+                        </body>
+
+                        <body name="T7" pos="0.00125 0 -0.001" gravcomp="0">
+                            <geom name="T7" pos="-0.0 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T7" density="1908"/>
+                            <joint name="T8_T7_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                            <joint name="T8_T7_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                            <joint name="T8_T7_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                            
+                            <site name="T7_SpinousProcess" pos="0.00090 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
+                            <site name="T7_RTransverseProcess" pos="0.00090 -0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                            <site name="T7_LTransverseProcess" pos="0.00090 0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                            
+                            <site name="RSerratusVentralisThoracis_7_1" pos="-0.00580 -0.00700 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                            <site name="RSerratusVentralisThoracis_7_2" pos="-0.00255 -0.00775 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                            <site name="LSerratusVentralisThoracis_7_1" pos="-0.00580 0.00700 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                            <site name="LSerratusVentralisThoracis_7_2" pos="-0.00255 0.00775 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                            <body name="Rib_7R" pos="0.00225 -0.00125 0.00025" gravcomp="0">
+                                <geom name="Rib_7R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7R" density="1908"/>
+                                <joint name="Rib_7R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                <joint name="Rib_7R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+
+                                <site name="T7_RRibAngle" pos="-0.00155 -0.00325 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                <site name="Rib7Rinter" pos="-0.002566 -0.004461 0.000414" size="0.0005" group="5" rgba="1 0 0 1" />                                    
+                            </body>
+
+                            <body name="Rib_7L" pos="0.00225 0.00125 0.00025" gravcomp="0">
+                                <geom name="Rib_7L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7L" density="1908"/>
+                                <joint name="Rib_7L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                <joint name="Rib_7L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+
+                                <site name="T7_LRibAngle" pos="-0.00155 0.00325 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                <site name="Rib7Linter" pos="-0.002566 0.004461 0.000414" size="0.0005" group="5" rgba="1 0 0 1" />                                    
+                            </body>
+
+                            <body name="T6" pos="0.0008 0 -0.001" gravcomp="0">
+                                <geom name="T6" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T6" density="1908"/>
+                                <joint name="T7_T6_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                <joint name="T7_T6_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                <joint name="T7_T6_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                
+                                <site name="T6_SpinousProcess" pos="0.00150 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                <site name="T6_RTransverseProcess" pos="0.00150 -0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                <site name="T6_LTransverseProcess" pos="0.00150 0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                                <site name="RSerratusVentralisThoracis_6_1" pos="-0.00485 -0.00650 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                <site name="RSerratusVentralisThoracis_6_2" pos="-0.00235 -0.00750 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                <site name="LSerratusVentralisThoracis_6_1" pos="-0.00485 0.00650 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                <site name="LSerratusVentralisThoracis_6_2" pos="-0.00235 0.00750 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                <body name="Rib_6R" pos="0.002 -0.00125 -0.0005" gravcomp="0">
+                                    <geom name="Rib_6R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6R" density="1908"/>
+                                    <joint name="Rib_6R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                    <joint name="Rib_6R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                    
+                                    <site name="T6_RRibAngle" pos="-0.00050 -0.00300 0.00150" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    <site name="Rib6Rinter" pos="-0.002384 -0.004349 0.000603" size="0.0005" group="5" rgba="1 0 0 1" />
+                                    <site name="Rib6Rrectusabdominis" pos="-0.004317 0.00093 -0.01096" size="0.0005" group="5" rgba="1 0 0 1" />
+                                </body>
+
+                                <body name="Rib_6L" pos="0.002 0.00125 -0.0005" gravcomp="0">
+                                    <geom name="Rib_6L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6L" density="1908"/>
+                                    <joint name="Rib_6L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                    <joint name="Rib_6L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                    
+                                    <site name="T6_LRibAngle" pos="-0.00050 0.00300 0.00150" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    <site name="Rib6Linter" pos="-0.002384 0.004349 0.000603" size="0.0005" group="5" rgba="1 0 0 1" />
+                                    <site name="Rib6Lrectusabdominis" pos="-0.004317 -0.00093 -0.01096" size="0.0005" group="5" rgba="1 0 0 1" />
+                                </body>
+
+                                <body name="T5" pos="0.00125 0 -0.001" gravcomp="0">
+                                    <geom name="T5" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T5" density="1908"/>
+                                    <joint name="T6_T5_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                    <joint name="T6_T5_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                    <joint name="T6_T5_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                    
+                                    <site name="T5_SpinousProcess" pos="0.00165 0 0.00200" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    <site name="T5_RTransverseProcess" pos="0.00165 -0.00175 0.00050" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    <site name="T5_LTransverseProcess" pos="0.00165 0.00175 0.00050" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    
+                                    <site name="RSerratusVentralisThoracis_5_1" pos="-0.00460 -0.00600 -0.00650" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="RSerratusVentralisThoracis_5_2" pos="-0.00235 -0.00700 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="LSerratusVentralisThoracis_5_1" pos="-0.00460 0.00600 -0.00650" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="LSerratusVentralisThoracis_5_2" pos="-0.00235 0.00700 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                    <body name="Rib_5R" pos="0.002 -0.00125 -0.0006" gravcomp="0">
+                                        <geom name="Rib_5R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5R" density="1908"/>
+                                        <joint name="Rib_5R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                        <joint name="Rib_5R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                        
+                                        <site name="T5_RRibAngle" pos="-0.00035 -0.00275 0.00135" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                        <site name="Rib5Rinter" pos="-0.002860 -0.004564 0.000096" size="0.0005" group="5" rgba="1 0 0 1" />                                            
+                                    </body>
+
+                                    <body name="Rib_5L" pos="0.002 0.00125 -0.0006" gravcomp="0">
+                                        <geom name="Rib_5L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5L" density="1908"/>
+                                        <joint name="Rib_5L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                        <joint name="Rib_5L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                        
+                                        <site name="T5_LRibAngle" pos="-0.00035 0.00275 0.00135" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                        <site name="Rib5Linter" pos="-0.002860 0.004564 0.000096" size="0.0005" group="5" rgba="1 0 0 1" />                                            
+                                    </body>
+
+                                    <body name="T4" pos="0.0015 0 -0.0013" gravcomp="0">
+                                        <geom name="T4" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T4" density="1908"/>
+                                        <joint name="T5_T4_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                        <joint name="T5_T4_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                        <joint name="T5_T4_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                        
+                                        <site name="T4_SpinousProcess" pos="0.00165 0 0.00180" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                        <site name="T4_RTransverseProcess" pos="0.00165 -0.00175 0.00030" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                        <site name="T4_LTransverseProcess" pos="0.00165 0.00175 0.00030" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                                        <site name="RSerratusVentralisThoracis_4_1" pos="-0.00385 -0.00500 -0.00570" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="RSerratusVentralisThoracis_4_2" pos="-0.00260 -0.00625 -0.00420" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="LSerratusVentralisThoracis_4_1" pos="-0.00385 0.00500 -0.00570" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="LSerratusVentralisThoracis_4_2" pos="-0.00260 0.00625 -0.00420" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                        <body name="Rib_4R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                            <geom name="Rib_4R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4R" density="1908"/>
+                                            <joint name="Rib_4R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                            <joint name="Rib_4R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                            
+                                            <site name="T4_RRibAngle" pos="0.00015 -0.00250 0.00140" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            <site name="Rib4Rinter" pos="-0.002237 -0.003879 0.000555" size="0.0005" group="5" rgba="1 0 0 1" />
+                                            <site name="RScalenusPosterior_1" pos="-0.0036 -0.005 -0.0036" size="0.0005" group="5"/>
+                                        </body>
+
+                                        <body name="Rib_4L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                            <geom name="Rib_4L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4L" density="1908"/>
+                                            <joint name="Rib_4L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                            <joint name="Rib_4L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                            
+                                            <site name="T4_LRibAngle" pos="0.00015 0.00250 0.00140" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            <site name="Rib4Linter" pos="-0.002237 0.003879 0.000555" size="0.0005" group="5" rgba="1 0 0 1" />
+                                            <site name="LScalenusPosterior_1" pos="-0.0036 0.005 -0.0036" size="0.0005" group="5"/>
+                                        </body>
+
+                                        <body name="RScapula" pos="0.0 0.0 -0.00225" euler="0 0.0 0" gravcomp="0">
+                                            <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
+                                            
+                                            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+                                            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+                                            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.08726646259971647 0.08726646259971647" group="1" />
+                                            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-0.08726646259971647 0.08726646259971647" group="1" />
+                                            <site name="RBicepsLongus_RBicepsLongus-P1" pos="1.00490300e-02 -5.41164926e-03  2.71665878e-03" size="0.0005" />
+                                            <site name="RBicepsBrevis_origin" pos="1.02369300e-02 -4.75999359e-03  1.90260437e-03" size="0.0005" />
+                                            <site name="RTri_Long_origin" pos="8.21030000e-03 -6.22938947e-03  2.78360180e-03" size="0.0005" />
+                                            <site name="RCoracobrachialis_origin" pos="1.00961300e-02 -4.60999181e-03  2.23503656e-03" size="0.0005" />
+                                            <site name="RDeltoideusSpinal_origin" pos="2.37205000e-03 -5.38492456e-03  6.61157836e-03" size="0.0005" />
+                                            <site name="RDeltoideusAcromial_origin" pos="1.10861300e-02 -6.80411366e-03  2.57019606e-03" size="0.0005" />
+                                            <site name="RInfraspinatus_origin" pos="-1.95100000e-05 -6.23933901e-03  6.03663259e-03" size="0.0005" />
+                                            <site name="RSupraspinatus_origin" pos="1.35908000e-03 -4.25962054e-03  7.62681373e-03" size="0.0005" />
+                                            <site name="RSupraspinatus_P1" pos="1.00409200e-02 -5.87667705e-03  3.57397091e-03" size="0.0005" />
+                                            <site name="RSubscapularis_origin" pos="2.94133000e-03 -3.07928342e-03  7.62716341e-03" size="0.0005" />
+                                            <site name="RTeresMajor_origin" pos="-4.17450000e-04 -7.79901805e-03  3.07864101e-03" size="0.0005" />
+                                            <site name="RTeresMinor_origin" pos="4.41866600e-03 -6.75461590e-03  3.62145298e-03" size="0.0005" />
+                                            <site name="RSerratusVentralisThoracis_scapula_1" pos="-0.001 -0.0065  0.005" size="0.0005" group="5"/>
+                                            <site name="RSerratusVentralisThoracis_scapula_2" pos="-0.0011 -0.007  0.004" size="0.0005" group="5"/>
+                                            <site name="RSerratusVentralisCervicis_scapula_1" pos="0.0012 -0.0045 0.00675" size="0.0005" group="5"/>
+                                            <site name="RPectoralisMinor_coraco_1" pos="1.00961300e-02 -4.60999181e-03  2.23503656e-03" size="0.0005" group="5"/>
+                                            <site name="RRhomboideusCapitis_1" pos="1.35908000e-03 -4.25962054e-03  7.62681373e-03" size="0.0005" group="5"/>
+                                            <site name="RRhomboideusCapitis_2" pos="0.005 -0.005  0.007" size="0.0005" group="5"/>
+                                            <site name="RRhomboideusCervicis_1" pos="-0.001 -0.00625  0.0045" size="0.0005" group="5" />
+                                            <site name="RRhomboideusCervicis_2" pos="2.94133000e-03 -3.07928342e-03  0.00625" size="0.0005" group="5" />
+                                            <site name="RRhomboideusCervicis_3" pos="0.005 -0.00275  0.0065" size="0.0005" group="5" />
+                                            <site name="RRhomboideusThoracis_1" pos="-0.001 -0.006  0.0055" size="0.0005" group="5" />
+                                            <site name="RRhomboideusThoracis_2" pos="0.0012 -0.00375 0.00675" size="0.0005" group="5" />
+                                            <site name="ROmotransversarius_2" pos="0.011 -0.007  0.003" size="0.0005" group="5" />
+                                            <site name="RTrapezius_1" pos="0.004 -0.006 0.00675" size="0.0005" group="5" />
+                                            <site name="RTrapezius_2" pos="0.01 -0.007  0.003" size="0.0005" group="5" />
+                                            <site name="RTrapezius_3" pos="0.004 -0.00275  0.0075" size="0.0005" group="5" />
+                                            <site name="RTrapezius_4" pos="-0.001 -0.00575  0.007" size="0.0005" group="5" />
+                                            <site name="RLatissimusDorsi_3" pos="-0.0009 -0.00775 0.00255" size="0.0005" group="5" rgba="1 0.2 0.2 1"/>
+
+                                            <include file="Body/Body_Arm_r.xml"/>
+                                        </body>
+
+                                        <body name="LScapula" pos="0.0 0.0 -0.00225" gravcomp="0">
+                                            <geom name="LScapula" pos="0.005 0.0085 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="LScapula" density="1908" />
+                                            
+                                            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="2" />
+                                            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="2" />
+                                            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.08726646259971647 0.08726646259971647" group="2" />
+                                            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-0.08726646259971647 0.08726646259971647" group="2" />
+                                            <site name="LBicepsLongus_LBicepsLongus-P1" pos="1.00490300e-02 5.41164926e-03  2.71665878e-03" size="0.0005" />
+                                            <site name="LBicepsBrevis_origin" pos="1.02369300e-02 4.75999359e-03  1.90260437e-03" size="0.0005" />
+                                            <site name="LTri_Long_origin" pos="8.21030000e-03 6.22938947e-03  2.78360180e-03" size="0.0005" />
+                                            <site name="LCoracobrachialis_origin" pos="1.00961300e-02 4.60999181e-03  2.23503656e-03" size="0.0005" />
+                                            <site name="LDeltoideusSpinal_origin" pos="2.37205000e-03 5.38492456e-03  6.61157836e-03" size="0.0005" />
+                                            <site name="LDeltoideusAcromial_origin" pos="1.10861300e-02 6.80411366e-03  2.57019606e-03" size="0.0005" />
+                                            <site name="LInfraspinatus_origin" pos="-1.95100000e-05 6.23933901e-03  6.03663259e-03" size="0.0005" />
+                                            <site name="LSupraspinatus_origin" pos="1.35908000e-03 4.25962054e-03  7.62681373e-03" size="0.0005" />
+                                            <site name="LSupraspinatus_P1" pos="1.00409200e-02 5.87667705e-03  3.57397091e-03" size="0.0005" />
+                                            <site name="LSubscapularis_origin" pos="2.94133000e-03 3.07928342e-03  7.62716341e-03" size="0.0005" />
+                                            <site name="LTeresMajor_origin" pos="-4.17450000e-04 7.79901805e-03  3.07864101e-03" size="0.0005" />
+                                            <site name="LTeresMinor_origin" pos="4.41866600e-03 6.75461590e-03  3.62145298e-03" size="0.0005" />
+                                            <site name="LSerratusVentralisThoracis_scapula_1" pos="-0.001 0.0065  0.005" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisThoracis_scapula_2" pos="-0.0011 0.007  0.004" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisCervicis_scapula_1" pos="0.0012 0.0045 0.00675" size="0.0005" group="5"/>
+                                            <site name="LPectoralisMinor_coraco_1" pos="1.00961300e-02 4.60999181e-03  2.23503656e-03" size="0.0005" group="5"/>
+                                            <site name="LRhomboideusCapitis_1" pos="1.35908000e-03 4.25962054e-03  7.62681373e-03" size="0.0005" group="5"/>
+                                            <site name="LRhomboideusCapitis_2" pos="0.005 0.005  0.007" size="0.0005" group="5"/>
+                                            <site name="LRhomboideusCervicis_1" pos="-0.001 0.00625  0.0045" size="0.0005" group="5" />
+                                            <site name="LRhomboideusCervicis_2" pos="2.94133000e-03 3.07928342e-03  0.00625" size="0.0005" group="5" />
+                                            <site name="LRhomboideusCervicis_3" pos="0.005 0.00275  0.0065" size="0.0005" group="5" />
+                                            <site name="LRhomboideusThoracis_1" pos="-0.001 0.006  0.0055" size="0.0005" group="5" />
+                                            <site name="LRhomboideusThoracis_2" pos="0.0012 0.00375 0.00675" size="0.0005" group="5" />
+                                            <site name="LOmotransversarius_2" pos="0.011 0.007  0.003" size="0.0005" group="5" />
+                                            <site name="LTrapezius_1" pos="0.004 0.006 0.00675" size="0.0005" group="5" />
+                                            <site name="LTrapezius_2" pos="0.01 0.007  0.003" size="0.0005" group="5" />
+                                            <site name="LTrapezius_3" pos="0.004 0.00275  0.0075" size="0.0005" group="5" />
+                                            <site name="LTrapezius_4" pos="-0.001 0.00575  0.007" size="0.0005" group="5" />
+                                            <site name="LLatissimusDorsi_3" pos="-0.0009 0.00775 0.00255" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+                                            <include file="Body/Body_Arm_l.xml"/>
+                                        </body>
+
+                                        <body name="RClavicle" pos="0.0075 -0.00 -0.0055" gravcomp="0">
+                                            <geom name="RClavicle" pos="-0.00235 -0.0085 0.00075" euler="-0.5 1.57 0" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
+                                            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
+                                            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
+                                            
+                                            <site name="RDeltoideusClavicle_origin" pos="0.0031 -0.00375 0.0031" size="0.0005" rgba="0 0 1 1"/>
+                                            <site name="RCleidomastoideus_2" pos="0.00225 -0.00275 0.00175" size="0.0005" group="5"/>
+                                            <site name="ROmotransversarius_1" pos="0.00425 -0.00575 0.005" size="0.0005" group="5" />
+                                            <site name="RSubclavius_1" pos="0.00375 -0.005 0.00475" size="0.0005" group="5"/>
+                                        </body>
+
+                                        <body name="LClavicle" pos="0.0075 -0.00 -0.0055" gravcomp="0">
+                                            <geom name="LClavicle" pos="-0.00235 0.0085 0.00075" euler="0.5 1.57 0" type="mesh" rgba="1 1 1 1" mesh="LClavicle" density="1908" />
+                                            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
+                                            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
+                                            
+                                            <site name="LDeltoideusClavicle_origin" pos="0.0031 0.00375 0.0031" size="0.0005" rgba="0 0 1 1"/>
+                                            <site name="LCleidomastoideus_2" pos="0.00225 0.00275 0.00175" size="0.0005" group="5"/>
+                                            <site name="LOmotransversarius_1" pos="0.00425 0.00575 0.005" size="0.0005" group="5" />
+                                            <site name="LSubclavius_1" pos="0.00375 0.005 0.00475" size="0.0005" group="5"/>
+                                        </body>
+
+                                        <body name="T3" pos="0.00135 0 -0.00075" gravcomp="0">
+                                            <geom name="T3" pos="0.0005 0 0.0" euler="0 0.4 0" type="mesh" rgba="1 1 1 1" mesh="T3" density="1908"/>
+                                            <joint name="T4_T3_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                            <joint name="T4_T3_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                            <joint name="T4_T3_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                            
+                                            <site name="T3_SpinousProcess" pos="0.00130 0 0.00155" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            <site name="T3_RTransverseProcess" pos="0.00130 -0.00175 0.00005" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            <site name="T3_LTransverseProcess" pos="0.00130 0.00175 0.00005" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            <site name="T3_VentralSurface" pos="0.00080 0 -0.00095" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                            <site name="RSerratusVentralisThoracis_3_1" pos="-0.00320 -0.00400 -0.00495" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="RSerratusVentralisThoracis_3_2" pos="-0.00270 -0.00600 -0.00345" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisThoracis_3_1" pos="-0.00320 0.00400 -0.00495" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisThoracis_3_2" pos="-0.00270 0.00600 -0.00345" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                            <body name="Rib_3R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                <geom name="Rib_3R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3R" density="1908"/>
+                                                <joint name="Rib_3R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                <joint name="Rib_3R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+
+                                                <site name="T3_RRibAngle" pos="-0.00020 -0.00225 0.00115" rgba="1 1 0 1" size="0.0005" group="4"/>                                                        
+                                                <site name="Rib3Rinter" pos="-0.001880 -0.003718 0.000772" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                                
+                                                <site name="RScalenusMedius_1" pos="-0.00415 -0.00275 -0.00435" size="0.0005" group="5"/>
+                                                <site name="RScalenusPosterior_2" pos="-0.00145 -0.00375 -0.00185" size="0.0005" group="5"/>                                                
+                                            </body>
+
+                                            <body name="Rib_3L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                <geom name="Rib_3L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3L" density="1908"/>
+                                                <joint name="Rib_3L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                <joint name="Rib_3L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                
+                                                <site name="T3_LRibAngle" pos="-0.00020 0.00225 0.00115" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                <site name="Rib3Linter" pos="-0.001880 0.003718 0.000772" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                                <site name="LScalenusMedius_1" pos="-0.00415 0.00275 -0.00435" size="0.0005" group="5"/>
+                                                <site name="LScalenusPosterior_2" pos="-0.00145 0.00375 -0.00185" size="0.0005" group="5"/> 
+                                            </body>
+
+                                            <body name="T2" pos="0.0012 0 -0.00075" gravcomp="0">
+                                                <geom name="T2" pos="0.0005 0 0.0" euler="0 0.1 0" type="mesh" rgba="1 1 1 1" mesh="T2" density="1908"/>
+                                                <joint name="T3_T2_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                                <joint name="T3_T2_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                                <joint name="T3_T2_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                                
+                                                <site name="T2_SpinousProcess" pos="0.00110 0 0.00280" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                <site name="T2_RTransverseProcess" pos="0.00110 -0.00175 -0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                <site name="T2_LTransverseProcess" pos="0.00110 0.00175 -0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                <site name="T2_VentralSurface" pos="0.00060 0 -0.00070" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                                <site name="RSerratusVentralisThoracis_2_1" pos="-0.00165 -0.00350 -0.00370" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="RSerratusVentralisThoracis_2_2" pos="-0.00165 -0.00500 -0.00170" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="LSerratusVentralisThoracis_2_1" pos="-0.00165 0.00350 -0.00370" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="LSerratusVentralisThoracis_2_2" pos="-0.00165 0.00500 -0.00170" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                                <body name="Rib_2R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                    <geom name="Rib_2R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2R" density="1908"/>
+                                                    <joint name="Rib_2R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                    <joint name="Rib_2R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                    
+                                                    <site name="T2_RRibAngle" pos="0.00010 -0.00200 0.00040" rgba="1 1 0 1" size="0.0005" group="4"/>                                         
+                                                    <site name="Rib2Rinter" pos="-0.000876 -0.001691 -0.000519" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+                                                    <site name="RPectoralisMinor_3" pos="-0.00139 0.000175 -0.0053" size="0.0005" group="5"/>
+
+                                                    <site name="RPectoralisMinimus_1" pos="-0.00139 -0.00125 -0.0056" size="0.0005" group="5"/>
+
+                                                    <site name="RScalenusMedius_2" pos="-0.00265 -0.00225 -0.0031" size="0.0005" group="5"/>
+                                                </body>
+
+                                                <body name="Rib_2L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                    <geom name="Rib_2L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2L" density="1908"/>
+                                                    <joint name="Rib_2L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                    <joint name="Rib_2L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+
+                                                    <site name="T2_LRibAngle" pos="0.00010 0.00200 0.00040" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                    <site name="Rib2Linter" pos="-0.000876 0.001691 -0.000519" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+                                                    <site name="LPectoralisMinor_3" pos="-0.00139 -0.000175 -0.0053" size="0.0005" group="5"/>
+                                                    <site name="LPectoralisMinimus_1" pos="-0.00139 0.00125 -0.0056" size="0.0005" group="5"/>
+                                                    <site name="LScalenusMedius_2" pos="-0.00265 0.00225 -0.0031" size="0.0005" group="5"/>
+                                                </body>
+
+                                                <body name="T1" pos="0.0008 0 -0.00075" gravcomp="0">
+                                                    <geom name="T1" pos="0.0005 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T1" density="1908"/>
+                                                    <joint name="T2_T1_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
+                                                    <joint name="T2_T1_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
+                                                    <joint name="T2_T1_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                                                                
+                                                    <site name="T1_SpinousProcess" pos="0.00130 0 0.00205" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                    <site name="T1_RTransverseProcess" pos="0.00130 -0.00175 0.00055" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                    <site name="T1_LTransverseProcess" pos="0.00130 0.00175 0.00055" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                    <site name="T1_VentralSurface" pos="0.00080 0 -0.00045" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                                    <site name="RSerratusVentralisThoracis_1_1" pos="0.00055 -0.00300 -0.00295" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="RSerratusVentralisThoracis_1_2" pos="-0.00120 -0.00500 0.00005" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="LSerratusVentralisThoracis_1_1" pos="0.00055 0.00300 -0.00295" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="LSerratusVentralisThoracis_1_2" pos="-0.00120 0.00500 0.00005" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                                    <site name="RSerratusVentralisCervicis_1" pos="0.00180 -0.00400 0.00255" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="LSerratusVentralisCervicis_1" pos="0.00180 0.00400 0.00255" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                                    <body name="Rib_1R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                        <geom name="Rib_1R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1R" density="1908"/>
+                                                        <joint name="Rib_1R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                        <joint name="Rib_1R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+
+                                                        <site name="T1_RRibAngle" pos="0.00030 -0.00175 0.00065" rgba="1 1 0 1" size="0.0005" group="4"/>                                                            
+                                                        <site name="Rib1Rinter" pos="-0.000420 -0.001380 -0.001533" size="0.0005" group="5" rgba="1 0 0 1"/>
+
+                                                        <site name="RPectoralisMinor_2" pos="0.0008 -0.0006 -0.00335" size="0.0005" group="5"/>
+
+                                                        <site name="RScalenusAnterior_1" pos="0.0003 -0.00175 -0.00225" size="0.0005" group="5" />
+                                                        <site name="RScalenusAnterior_2" pos="0.0008 -0.002 -0.00175" size="0.0005" group="5" />
+                                                        <site name="RSubclavius_2" pos="0.0007 -0.00065 -0.00285" size="0.0005" group="5"/>
+                                                    
+                                                        <body name="Sternum" pos="0.003 0.00125 -0.002" gravcomp="0">
+                                                            <geom name="Sternum" pos="0 0 0" euler="0.0 -0.1 0.05" type="mesh" rgba="1 1 1 1" mesh="Sternum" density="1908"/>
+
+                                                            <site name="RPectoralisMajor_2" pos="0.0 0.00 -0.001" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMajor_3" pos="-0.002 0.0 -0.0025" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMajor_4" pos="-0.005 0.0 -0.003" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMajor_5" pos="-0.008 0.0 -0.0035" size="0.0005" group="5"/>
+
+                                                            <site name="LPectoralisMajor_2" pos="0.0 0.00 -0.001" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMajor_3" pos="-0.002 0.0 -0.0025" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMajor_4" pos="-0.005 0.0 -0.003" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMajor_5" pos="-0.008 0.0 -0.0035" size="0.0005" group="5"/>
+
+                                                            <site name="RPectoralisMinor_1" pos="0.000775 -0.0035 0.00065" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMinor_1" pos="0.000775 0.0035 0.00065" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMinor_4" pos="-0.011 0.0 -0.005" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMinor_4" pos="-0.011 0.0 -0.005" size="0.0005" group="5"/>
+                                                            
+                                                            <site name="RPectoralisMinimus_2" pos="-0.00825 -0.00175 -0.00355" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMinimus_3" pos="-0.01125 -0.001 -0.00435" size="0.0005" group="5"/>
+                                                            <site name="RPectoralisMinimus_4" pos="-0.01675 0.00 -0.005355" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMinimus_2" pos="-0.00825 0.00175 -0.00355" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMinimus_3" pos="-0.01125 0.001 -0.00435" size="0.0005" group="5"/>
+                                                            <site name="LPectoralisMinimus_4" pos="-0.01675 0.00 -0.005355" size="0.0005" group="5"/>
+
+                                                            <site name="RSternomastoideus_2" pos="0.0008 -0.001 -0.00035" size="0.0005" group="5" />
+                                                            <site name="LSternomastoideus_2" pos="0.0008 0.001 -0.00035" size="0.0005" group="5" />
+
+                                                        </body>
+                                                    
+                                                    </body>
+
+                                                    <body name="Rib_1L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                        <geom name="Rib_1L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1L" density="1908"/>
+                                                        <joint name="Rib_1L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                        <joint name="Rib_1L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+
+                                                        <site name="T1_LRibAngle" pos="0.00030 0.00175 0.00065" rgba="1 1 0 1" size="0.0005" group="4"/>                                                                
+                                                        <site name="Rib1Linter" pos="-0.000420 0.001380 -0.001533" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                                        <site name="LPectoralisMinor_2" pos="0.0008 0.0006 -0.00335" size="0.0005" group="5"/>
+
+                                                        <site name="LScalenusAnterior_1" pos="0.0003 0.00175 -0.00225" size="0.0005" group="5" />
+                                                        <site name="LScalenusAnterior_2" pos="0.0008 0.002 -0.00175" size="0.0005" group="5" />
+                                                        <site name="LSubclavius_2" pos="0.0007 0.00065 -0.00285" size="0.0005" group="5"/>
+                                                    </body>
+
+                                                    <include file="Body/Body_HeadNeck.xml"/>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </body>
+</mujoco>
