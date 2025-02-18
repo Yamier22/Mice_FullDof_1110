@@ -6,6 +6,7 @@
         <joint name="T_L1_x" class="Lumbar_x" pos="0 0 0.001" axis="0.9848 0 0.1736" group="0"/>
         <joint name="T_L1_y" class="Lumbar_y" pos="0 0 0.001" axis="0 1 0" group="0"/>
         <joint name="T_L1_z" class="Lumbar_z" pos="0 0 0.001" axis="-0.1736 0 0.9848" group="0"/>
+        <!-- <site name="Marker_L1" pos="0.00 0.00 0.002" class="Marker" /> -->
         <site name="L1_SpinousProcess" pos="-0.0025 0 0.002" size="0.0005" group="5"/>
         <site name="L1_RTransverseProcess" pos="-0.001 -0.00175 0.0005" size="0.0005" group="5"/>
         <site name="L1_LTransverseProcess" pos="-0.001 0.00175 0.0005" size="0.0005" group="5"/>
@@ -72,6 +73,7 @@
                             <joint name="L5_L6_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0" group="0"/>
                             <joint name="L5_L6_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0" group="0"/>
                             <joint name="L5_L6_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1" group="0"/>
+                            <site name="Marker_SpineM" pos="0 0 0" class="Marker"/>
                             <site name="L6_SpinousProcess" pos="-0.0005 0 0.00275" size="0.0005" group="5"/>
                             <site name="L6_RTransverseProcess" pos="0.001 -0.0019 -0.00085" size="0.0005" group="5"/>
                             <site name="L6_LTransverseProcess" pos="0.001 0.0019 -0.00085" size="0.0005" group="5"/>
@@ -87,6 +89,7 @@
                                 <joint name="L6_S1_y" class="Lumbar_y" pos="-0.005 0 0.002" axis="0 1 0" group="0"/>
                                 <joint name="L6_S1_z" class="Lumbar_z" pos="-0.005 0 0.002" axis="0 0 1" group="0"/>
 
+                                <!-- <site name="Marker_Pelvis" pos="-0.013 0.00 0.003" class="Marker" /> -->
                                 <site name="Rcristaepubis" pos="-0.0175 -0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
                                 <site name="Lcristaepubis" pos="-0.0175 0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
 

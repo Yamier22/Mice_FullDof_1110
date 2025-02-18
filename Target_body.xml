@@ -1,0 +1,68 @@
+<mujoco>
+    <body name="Target_EarL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_EarL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_EarR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_EarR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_Snout" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_Snout" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_SpineF" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_SpineF" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_SpineM" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_SpineM" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_Tail_base" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_Tail_base" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_Tail_mid" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_Tail_mid" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_Tail_end" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_Tail_end" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ForepawL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ForepawL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_WristL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_WristL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ElbowL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ElbowL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ShoulderL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ShoulderL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ForepawR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ForepawR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_WristR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_WristR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ElbowR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ElbowR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_ShoulderR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_ShoulderR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_HindpawL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_HindpawL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_AnkleL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_AnkleL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_KneeL" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_KneeL" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_HindpawR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_HindpawR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_AnkleR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_AnkleR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+    <body name="Target_KneeR" pos="0 0 0" euler="0 0 0">
+        <geom name="Target_KneeR" pos="0 0 0" euler="0 0 0" type="sphere" size="0.0015" rgba="1 0 0 1"/>
+    </body>
+</mujoco>

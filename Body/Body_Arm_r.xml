@@ -7,6 +7,7 @@
         
         <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" contype="0" conaffinity="0"/>
         <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" contype="0" conaffinity="0"/>
+        <site name="Marker_RHumerus" pos="0.00 -0.002 -0.009" class="Marker" />  
         <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
         <site name="RBicepsLongus_RBicepsLongus-P2" pos="2.33176664e-04  6.83361903e-04  1.27178559e-03" size="0.0005" />
         <site name="RBicepsLongus_RBicepsLongus-P3" pos="9.07165153e-04  4.91352988e-04 -7.12475112e-04" size="0.0005" />
@@ -58,6 +59,7 @@
             <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
             
             <geom name="RForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 0.00025 0.0018" euler="-1.5707963267948966 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" contype="0" conaffinity="0"/>
+            <!--<site name="Marker_RUlna" pos="0.00 -0.001 -0.007" class="Marker" />    -->
             <site name="RForearm_Proximal_sidesite" pos="-1.21121904e-03  2.56772155e-04  3.57839572e-03" size="0.0005" />
             <site name="RBrachialis_insertion" pos="-7.08316028e-04  1.04213950e-04 -6.17341662e-04" size="0.0005" />
             <site name="RTri_Long_insertion" pos="-1.28298531e-03  3.55956089e-04  2.59502057e-03" size="0.0005" />
@@ -127,7 +129,8 @@
                     <geom name="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                     <geom name="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" size="0.000469275" pos="0.000267 0.00047446 -0.00067945" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                     <geom name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" size="0.00047319" pos="0.00022195  0.00032321 -0.00058098" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
-                    
+                    <site name="Marker_RForepaw" pos="0.00 0.00 -0.002" class="Marker" />
+                    <site name="Marker_RWrist" pos="0.00 -0.00 0.0 " class="Marker" /> 
                     <site name="RFlaxorCarpiUlnar_insertion" pos="-6.27075644e-04  9.03877667e-05 -5.82679233e-04" size="0.0005" />
                     <site name="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite" pos="7.86303987e-04  3.72838006e-04 -6.39069023e-04" size="0.0005" />
                     <site name="RPalmarLongus_insertion" pos="-6.98085778e-05  6.25130573e-04 -3.46668951e-04" size="0.0005" />

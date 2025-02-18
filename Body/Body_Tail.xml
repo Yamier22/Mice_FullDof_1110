@@ -6,7 +6,7 @@
         <site name="CA1_LSCVentralLateral" pos="-0.001 0.002 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
         <site name="CA1_RSCVentralMedial" pos="-0.0005 -0.0005 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
         <site name="CA1_LSCVentralMedial" pos="-0.0005 0.0005 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
-        
+
         <site name="CA1_RSCDorsalLateral" pos="-0.001 -0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
         <site name="CA1_LSCDorsalLateral" pos="-0.001 0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
         <site name="CA1_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -36,7 +36,7 @@
             
             <body name="CA3" pos="-0.0025 0 0" gravcomp="0">
                 <geom name="CA3" pos="0.055 -0.0035 -0.0095" euler="0 0 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA3" density="1908"/>                                                    
-                
+                <site name="Marker_Tail_base" pos="0.00 0.00 0.00" class="Marker"/>
                 <site name="CA3_RSCVentralLateral" pos="-0.001 -0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
                 <site name="CA3_LSCVentralLateral" pos="-0.001 0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
                 <site name="CA3_RSCVentralMedial" pos="-0.0005 -0.0005 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -52,7 +52,7 @@
                 
                 <body name="CA4" pos="-0.0025 0 0.001" gravcomp="0">
                     <geom name="CA4" pos="0.0575 -0.0095 -0.00775" euler="-0.35 0.0 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA4" density="1908"/>                                                        
-                    
+                    <!-- <site name="Marker_CA4" pos="0.00 0.00 0.00" class="Marker"/> -->
                     <site name="CA4_RSCVentralLateral" pos="-0.0015 -0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
                     <site name="CA4_LSCVentralLateral" pos="-0.0015 0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
                     <site name="CA4_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -197,6 +197,7 @@
                                                     <body name="CA13" pos="-0.00425 0 0" gravcomp="0">
                                                         <geom name="CA13" pos="-0.05825 -0.00675 -0.0185" euler="-0.3 3.0 0" type="mesh" rgba="1 1 1 1" mesh="CA13" density="1908"/>
                                                         
+                                                        <site name="Marker_Tail_mid" pos="0.00 0.00 0.00" class="Marker"/>
                                                         <site name="CA13_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                         <site name="CA13_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                         <site name="CA13_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -420,7 +421,7 @@
                                                                                     
                                                                                     <body name="CA27" pos="-0.00155 0 0" gravcomp="0">
                                                                                     <geom name="CA27" pos="-0.01215 -0.00565 -0.0141" euler="-0.3 2.9 0" type="mesh" rgba="1 1 1 1" mesh="CA27" density="1908"/>
-                                                                                    
+                                                                                    <site name="Marker_Tail_end" pos="0.00 0.00 0.00" class="Marker"/>
                                                                                     <site name="CA27_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                     <site name="CA27_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                     <site name="CA27_RSCVentralMedial" pos="-0.0005 -0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
