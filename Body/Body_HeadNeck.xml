@@ -51,6 +51,7 @@
                     <joint name="C5_C4_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588" group="0"/>
                     <joint name="C5_C4_y" class="Cervical_y" pos="0 0 0" axis="0 1 0" group="0"/>
                     <joint name="C5_C4_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659" group="0"/>
+                    <!-- <site name="Marker_C4" pos="0.0 0.0 0.001" class="Marker"/> -->
                     <site name="C4_SpinousProcess" pos="0.0001 0.0 0.001" size="0.0005" group="5"/>
                     <site name="C4_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
                     <site name="C4_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
@@ -113,7 +114,10 @@
                                     <joint name="C1_head_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226" group="0"/>
                                     <joint name="C1_head_y" class="Cervical_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                     <joint name="C1_head_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063" group="0"/>
-                                
+
+                                    <site name="Marker_Nose" pos="0.022 0.00 -0.008" class="Marker"/>
+                                    <site name="Marker_LEar" pos="0.0045 0.005 0.003" class="Marker"/>
+                                    <site name="Marker_REar" pos="0.0045 -0.005 0.003" class="Marker"/>    
                                     <site name="RRectusCapitisPosteriorMajor" pos="0.001 -0.003 0.00175" size="0.0005" group="5" />
                                     <site name="RRectusCapitisPosteriorMinor" pos="0.001 -0.0015 0.00225" size="0.0005" group="5" />
                                     <site name="RObliquusCapitisSuperior" pos="0.0015 -0.004 0.001" size="0.0005" group="5" />

@@ -21,7 +21,8 @@
         <geom name="RHip_Flexors_at_Quads_ellipsoid_ILI" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
         <geom name="RPECT_at_Quads_ellipsoid_PECT" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
         <geom name="RCF_BFA_at_Thigh_ellipsoid_BFA" size="0.000471177" pos="-0.00198958 -0.00146195 -0.00542555" group="2" rgba="0.19 0.83 0.78 0.8" contype="0" conaffinity="0"/>
-
+        
+        <!-- <site name="Marker_RFemur" pos="0 -0.002 0" class="Marker"/> -->
         <site name="RQuads_at_Femur_sidesite" pos="0.0006435 -0.0001653 -0.01497" size="0.0005" />
         <site name="RHip_Flexors_at_Quads_sidesite" pos="-2.985e-05 0.0003949 -0.002576" size="0.0005" />
         <site name="RQF_at_Femur_sidesite" pos="-0.002966 -0.00172 -0.005554" size="0.0005" />
@@ -80,6 +81,7 @@
             <geom name="RPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="-4.681845718474789 -0.16250760665319203 -0.15589280878813352" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
             <geom name="RBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 0.0005 -0.0057" euler="-1.487893187325166 0.1920036710118962 -0.18709929581379214" group="2" rgba="0.19 0.83 0.78 0.8" contype="0" conaffinity="0"/>
             
+            <site name="Marker_RLeg" pos="0.00 -0.0015 0.00" class="Marker"/>
             <site name="RPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 -1.022e-04 -3.013e-03" size="0.0005" />
             <site name="RAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 -1.658e-04 -1.795e-02" size="0.0005" />
             <site name="RPOP_at_Tibia_sidesite" pos="-2.673e-03  3.100e-04 -1.789e-03" size="0.0005" />
@@ -137,6 +139,8 @@
                 <geom name="RTarsalMetatarsal" pos="0 -0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTarsalMetatarsal" group="0" density="1908"/>
                 <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                 
+                <site name="Marker_RPedal_Wrist" pos="0.00 -0.00 0.00" class="Marker"/>
+                <site name="Marker_RPedal" pos="0.009 -0.00 -0.002" class="Marker"/>
                 <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03 -0.001" size="0.0005" />
                 <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  -0.002" size="0.0005"/>
                 <site name="REDL_EDL-P4" pos="0.00134 -0.00025 -0.001" size="0.0005" />
